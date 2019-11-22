@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HSBC Insurance Singapore | Distributor Portal</title>
+<link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+<link href="/static/css/cdnbundle.css" rel="stylesheet" type="text/css">
+<link href="/static/css/hsbc.css" type="text/css" rel="stylesheet">
+<link href="/static/css/skin.css" rel="stylesheet" id="siteSkin">
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery-ui-1.12.1.custom.min.js"></script>
+<script src="/static/js/location.js"></script>
+<script src="/static/js/jquery.history.js"></script>
+<script src="/static/js/wizard.js"></script>
+<script src="/static/js/toastr.js"></script>
+<script src="/static/js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="projectType-form" style="">
+	<a id="top"></a>
+
+	<span id="wizHeader"></span>
+	<header class="navbar navbar-inverse navbar-fixed-top ix-nav">
+		<div class="container-fluid">
+			<div id="navbar-header">
+				<button class="navbar-toggle collapsed" type="button"
+					data-toggle="collapse" data-target=".ix-pagenav" id="ix-pagenavbtn"
+					style="display: none;">
+					<span class="sr-only">Toggle form navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+
+
+				<a class="navbar-brand analyticslog" 
+					id="lnkHomeHead" data-analyticsid="goToHome">
+					<div id="ixInfinitiLogo">
+						<img src="/static/img/produce.svg" alt="Infiniti Logo" height="56"
+							width="165"><span class="sr-only">Infiniti</span>
+					</div>
+				</a>
+			</div>
+			<nav>
+				<ul class="nav navbar-nav navbar-home">
+					<li><a 
+						id="lnkHome" title="Home" class="analyticslog"
+						data-analyticsid="goToHome">Home</a></li>
+				</ul>
+				<p class="navbar-text form-title hidden-xs">New Quotation MVP 2
+					Prod - SP</p>
+				<ul class="nav navbar-nav navbar-right">
+					<li id="loggedInUser">Welcome Marcus H HU</li>
+					<li id="LogoutMenu"><a id="lnkSignOut"
+						class="signout-link analyticslog" 
+						data-analyticsid="logoff">Log Out</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<form id="aspnetForm" method="post" novalidate="novalidate">
+
+		<input type="hidden" th:name="${_csrf.parameterName}"
+			th:value="${_csrf.token}" />
+		<div class="container-fluid ix-header-body wizardContent">
+			<table width="100%" class="NoPadding NoSpacing" role="presentation">
+				<tbody>
+					<tr>
+						<td id="Sections" style="display: none;">
+							<div class="collapse navbar-collapse ix-pagenav"
+								role="navigation">
+
+								<div id="topBar"></div>
+
+								<div id="OptionPanel">
+									<div id="plhCustomUI"></div>
+									<div id="pagesList"></div>
+								</div>
+								<div id="ProjectAnswerFiles"></div>
+							</div>
+						</td>
+						<td id="Questions" style="vertical-align: top" class="noNavPane">
+
+							<div id="up" aria-hidden="false">
+
+								<table width="100%" class="NoPadding NoSpacing"
+									role="presentation">
+									<tbody>
+										<tr>
+											<td id="QuestionsInner" style="vertical-align: top">
+												<div
+													style="z-index: 1000; position: absolute; display: none; overflow: hidden; width: 315px"
+													class="HelpText" id="HelpText" tabindex="-1">
+													<span></span>
+													<table align="right" role="presentation">
+														<tbody>
+															<tr>
+																<td><a onclick="wiz.hideHelp(); return false;"
+																	href="https://www.insurancedistributor.hsbc.com.sg/produce/wizard/d7eb5a26-e8b6-4883-b49c-0ab625e570eb/?logguid=20a5bf78-f8da-45ff-948c-6f6ceeb85494&amp;_=1574138390149#void"
+																	id="closeHelp">Close Help</a></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="Group "
+													id="P27b4ca7f-4d0c-4d86-811a-80a1f0cf9a21"
+													onkeypress="return wiz.fireDefaultButton(event, &#39;btnNextTop&#39;)">
+													<div>
+														<table class="NoPadding NoSpacing" width="100%"
+															role="presentation">
+															<tbody>
+																<tr>
+																	<td>
+																		<h2 class="page-title" id="page-title" tabindex="0">Product
+																			Feature - Jade</h2>
+																	</td>
+																	<td class="pageNav"></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div id="PageBody">
+
+														<div class="ls ">
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="ls ">
+																				<div class="l-table">
+																					<div class="l-row">
+
+																						<div class="l-cell l-cell-header lccell"
+																							style="display: table-cell"></div>
+																					</div>
+																					<div class="l-row">
+
+																						<div class="l-cell lccell lccellfirst ">
+																							<div class="lc">
+
+																								<div class="question-group ">
+																									<div class="question-body ">
+
+
+
+
+																										<div
+																											id="F284073a9_c246_4ed0_bdd9_58c5fa53d3bc_Q9"
+																											class="question-label">
+																											<h2>New Quotation</h2>
+																										</div>
+
+
+
+																									</div>
+
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+																			<div class="ls progressSmall">
+																				<div class="l-table">
+																					<div class="l-row">
+
+																						<div class="l-cell l-cell-header lccell"
+																							style="display: table-cell"></div>
+																					</div>
+																					<div class="l-row">
+
+																						<div class="l-cell lccell lccellfirst ">
+																							<div class="lc">
+
+																								<div class="question-group ">
+																									<div class="question-body ">
+
+
+
+
+																										<div
+																											id="F284073a9_c246_4ed0_bdd9_58c5fa53d3bc_Q1"
+																											class="question-label">
+																											<div>Product Feature | Step 3 of 4</div>
+																											<div class="progress"
+																												style="height: 5px; margin: 5px 0px;">
+																												<div
+																													class="progress-bar progress-bar-danger"
+																													role="progressbar" style="width: 75%;"
+																													aria-valuenow="75" aria-valuemin="0"
+																													aria-valuemax="100"></div>
+																											</div>
+																										</div>
+
+
+
+																									</div>
+
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="F284073a9_c246_4ed0_bdd9_58c5fa53d3bc_Q8"
+																						class="question-label"></div>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="ls ">
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="question-group " role="radiogroup"
+																				aria-labelledby="Q9Text">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div id="Q9Text" class="qtdiv" role="heading">Currency</div>
+
+																							</td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q9_change"
+																										name="Q9_change" value="0">
+																									<div class="radiogroup">
+																										<div class="radio-inline">
+																											<input type="radio" id="Q9-A12" name="Q9"
+																												value="12" checked="checked"
+																												onclick="$(&#39;#Q9_change&#39;).val(&#39;1&#39;);"
+																												required=""> <label for="Q9-A12"><span><span></span></span>
+																												USD </label>
+																										</div>
+																										<div class="radio-inline">
+																											<input type="radio" id="Q9-A13" name="Q9"
+																												value="13"
+																												onclick="$(&#39;#Q9_change&#39;).val(&#39;1&#39;);"
+																												required=""> <label for="Q9-A13"><span><span></span></span>
+																												AUD </label>
+																										</div>
+																									</div>
+
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q15" class="question-label">Note:
+																						Minimum Sum Insured for Jade Legacy Universal Life
+																						is&nbsp;USD&nbsp;750,000</div>
+
+
+
+																				</div>
+
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								id="Q18Text" for="Q18">Input Option</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q18_change"
+																										name="Q18_change" value="0"> <select
+																										id="Q18" class="form-control" name="Q18"
+																										onchange="$(&#39;#Q18_change&#39;).val(&#39;1&#39;);"
+																										required=""
+																										onblur="validate.checkMandatory(&#39;Q18&#39;, false);">
+																										<option value="" selected="False"
+																											class="select-watermark"></option>
+
+																										<option value="22" selected="selected">Sum
+																											Insured</option>
+
+																										<option value="23">Premium</option>
+
+																										<option value="24">Input</option>
+																									</select>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								for="Q19">Sum Insured</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="text" id="Q19" name="Q19" value=""
+																										placeholder="" class="form-control"
+																										autocomplete="off"
+																										onfocus="wiz.removeFormat(this, &#39;&#39;, &#39;.&#39;)"
+																										maxlength="29" required=""> <input
+																										type="hidden" id="Q19_change"
+																										name="Q19_change" value="0">
+																									<script type="text/javascript">
+            wiz.wireTextChanged('#Q19', '#Q19_change', '')
+        </script>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								id="Q21Text" for="Q21">Country Rating</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q21_change"
+																										name="Q21_change" value="1"> <select
+																										id="Q21" class="form-control" name="Q21"
+																										onchange="$(&#39;#Q21_change&#39;).val(&#39;1&#39;);validate.checkMandatory(&#39;Q21&#39;, false);"
+																										required=""
+																										onblur="validate.checkMandatory(&#39;Q21&#39;, false);">
+																										<option value="" selected="False"
+																											class="select-watermark"></option>
+
+																										<option value="27">A+</option>
+
+																										<option value="28">A</option>
+
+																										<option value="29">B</option>
+
+																										<option value="30">C</option>
+																									</select>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q1920" class="question-label">
+																						<ul style="padding-left: 14px;">
+																							<li style="padding-bottom: 2px;">A+ – Hong
+																								Kong, Macau, Singapore, UAE, China (all cities
+																								except Xin Jiang &amp; Tibet)</li>
+																							<li style="padding-bottom: 2px;">A – Taiwan,
+																								Malaysia, Indonesia (all cities except Central
+																								Sulawesi, Maluku, Papua and West Papua
+																								provinces), Philippines (all cities except
+																								Mindanao and the Sulu Archipelago), Thailand
+																								(all cities except Yala, Pattani, Narathiwat,
+																								Songkhla),&nbsp;South Korea</li>
+																							<li style="padding-bottom: 2px;">B –
+																								Vietnam&nbsp;(Danang, Hanoi, Ho Chi Minh City
+																								and Haiphong only)</li>
+																							<li style="padding-bottom: 2px;">C – Please
+																								check with business support</li>
+																						</ul>
+																					</div>
+
+
+
+																				</div>
+
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q51" class="question-label">For
+																						other countries not listed above, please contact
+																						business support to obtain country rate</div>
+
+
+
+																				</div>
+
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								for="Q22">Country of Residency</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="text" id="Q22" name="Q22" value=""
+																										placeholder="" class="form-control"
+																										autocomplete="off" spellcheck="true"
+																										maxlength="50"
+																										onblur="validate.checkMandatory(&#39;Q22&#39;, false);"
+																										required="">
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								id="Q23Text" for="Q23">Underwriting
+																									Class</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q23_change"
+																										name="Q23_change" value="0"> <select
+																										id="Q23" class="form-control" name="Q23"
+																										onchange="$(&#39;#Q23_change&#39;).val(&#39;1&#39;);validate.checkMandatory(&#39;Q23&#39;, false);"
+																										required=""
+																										onblur="validate.checkMandatory(&#39;Q23&#39;, false);">
+																										<option value="" selected="False"
+																											class="select-watermark"></option>
+
+																										<option value="32">Preferred Plus
+																											Non-Smoker</option>
+
+																										<option value="33">Preferred
+																											Non-Smoker</option>
+
+																										<option value="34">Standard Plus
+																											Non-Smoker</option>
+
+																										<option value="35" selected="selected">Standard
+																											Non-Smoker</option>
+
+																										<option value="36">Standard
+																											Non-Smoker + 25%</option>
+
+																										<option value="37">Standard
+																											Non-Smoker + 50%</option>
+
+																										<option value="38">Standard
+																											Non-Smoker + 75%</option>
+
+																										<option value="39">Standard
+																											Non-Smoker + 100%</option>
+
+																										<option value="40">Standard
+																											Non-Smoker + 125%</option>
+
+																										<option value="41">Standard
+																											Non-Smoker + 150%</option>
+
+																										<option value="42">Standard
+																											Non-Smoker + 175%</option>
+
+																										<option value="43">Standard
+																											Non-Smoker + 200%</option>
+
+																										<option value="44">Standard
+																											Non-Smoker + 225%</option>
+
+																										<option value="45">Standard
+																											Non-Smoker + 250%</option>
+																									</select>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								for="Q25">Flat Extra per 1000 Sum at
+																									Risk</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="text" id="Q25" name="Q25"
+																										value="0.0000" placeholder=""
+																										class="form-control" autocomplete="off"
+																										onfocus="wiz.removeFormat(this, &#39;&#39;, &#39;.&#39;)"
+																										maxlength="29"
+																										onblur="wiz.applyFormat(&#39;/produce/&#39;, this, &#39;&#39;, &#39;.&#39;, 0, 1, 4);if (validate.checkMandatory(&#39;Q25&#39;, false)){if (validate.currencyCheck(&#39;Q25&#39;,&#39;&#39;, &#39;.&#39;)){if ($(&#39;#Q25_change&#39;).val() == &#39;1&#39;) {wiz.delayPostback();}}}"
+																										required=""> <input type="hidden"
+																										id="Q25_change" name="Q25_change" value="0">
+																									<script type="text/javascript">
+            wiz.wireTextChanged('#Q25', '#Q25_change', '')
+        </script>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group " role="radiogroup"
+																				aria-labelledby="Q29Text">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div id="Q29Text" class="qtdiv" role="heading">Backdating</div>
+
+																							</td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q29_change"
+																										name="Q29_change" value="0">
+																									<div class="radiogroup">
+																										<div class="radio-inline">
+																											<input type="radio" id="Q29-A65" name="Q29"
+																												value="65"
+																												onclick="$(&#39;#Q29_change&#39;).val(&#39;1&#39;);"
+																												required=""> <label for="Q29-A65"><span><span></span></span>
+																												Yes </label>
+																										</div>
+																										<div class="radio-inline">
+																											<input type="radio" id="Q29-A66" name="Q29"
+																												value="66" checked="checked"
+																												onclick="$(&#39;#Q29_change&#39;).val(&#39;1&#39;);"
+																												required=""> <label for="Q29-A66"><span><span></span></span>
+																												No </label>
+																										</div>
+																									</div>
+
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								id="Q31Text" for="Q31">No Lapse
+																									Guarantee Option</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q31_change"
+																										name="Q31_change" value="0"> <select
+																										id="Q31" class="form-control" name="Q31"
+																										onchange="$(&#39;#Q31_change&#39;).val(&#39;1&#39;);"
+																										required=""
+																										onblur="validate.checkMandatory(&#39;Q31&#39;, false);">
+																										<option value="" selected="False"
+																											class="select-watermark"></option>
+
+																										<option value="68" selected="selected">Standard
+																											(No NLG)</option>
+
+																										<option value="69">No Lapse Guarantee
+																											at age 100</option>
+																									</select>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								id="Q32Text" for="Q32">Premium Solve</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q32_change"
+																										name="Q32_change" value="0"> <select
+																										id="Q32" class="form-control" name="Q32"
+																										onchange="$(&#39;#Q32_change&#39;).val(&#39;1&#39;);"
+																										required=""
+																										onblur="validate.checkMandatory(&#39;Q32&#39;, false);">
+																										<option value="" selected="False"
+																											class="select-watermark"></option>
+
+																										<option value="70" selected="selected">Endow
+																											Premium</option>
+
+																										<option value="71">Coverage to Age
+																											100</option>
+																									</select>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								id="Q34Text" for="Q34">Premium Period</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q34_change"
+																										name="Q34_change" value="0"> <select
+																										id="Q34" class="form-control" name="Q34"
+																										onchange="$(&#39;#Q34_change&#39;).val(&#39;1&#39;);"
+																										required=""
+																										onblur="validate.checkMandatory(&#39;Q34&#39;, false);">
+																										<option value="" selected="False"
+																											class="select-watermark"></option>
+
+																										<option value="73" selected="selected">Single</option>
+
+																										<option value="74">2 Pay</option>
+
+																										<option value="75">3 Pay</option>
+
+																										<option value="76">4 Pay</option>
+
+																										<option value="77">5 Pay</option>
+
+																										<option value="78">6 Pay</option>
+
+																										<option value="79">7 Pay</option>
+
+																										<option value="80">8 Pay</option>
+
+																										<option value="81">9 Pay</option>
+
+																										<option value="82">10 Pay</option>
+																									</select>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline "><label
+																								id="Q35Text" for="Q35">Guaranteed
+																									Interest Rate Lock Period</label></td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q35_change"
+																										name="Q35_change" value="0"> <select
+																										id="Q35" class="form-control" name="Q35"
+																										onchange="$(&#39;#Q35_change&#39;).val(&#39;1&#39;);validate.checkMandatory(&#39;Q35&#39;, false);"
+																										required=""
+																										onblur="validate.checkMandatory(&#39;Q35&#39;, false);">
+																										<option value="" selected="False"
+																											class="select-watermark"></option>
+
+																										<option value="84" selected="selected">1</option>
+
+																										<option value="85">3</option>
+																									</select>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group " role="radiogroup"
+																				aria-labelledby="Q39Text">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div id="Q39Text" class="qtdiv" role="heading">Print
+																									Option (including Alternate General Crediting
+																									Rate)</div>
+
+																							</td>
+																							<td><div class="question-body ">
+
+
+																									<input type="hidden" id="Q39_change"
+																										name="Q39_change" value="0">
+																									<div class="radiogroup">
+																										<div class="radio-inline">
+																											<input type="radio" id="Q39-A94" name="Q39"
+																												value="94"
+																												onclick="$(&#39;#Q39_change&#39;).val(&#39;1&#39;);"
+																												required=""> <label for="Q39-A94"><span><span></span></span>
+																												Yes </label>
+																										</div>
+																										<div class="radio-inline">
+																											<input type="radio" id="Q39-A95" name="Q39"
+																												value="95" checked="checked"
+																												onclick="$(&#39;#Q39_change&#39;).val(&#39;1&#39;);"
+																												required=""> <label for="Q39-A95"><span><span></span></span>
+																												No </label>
+																										</div>
+																									</div>
+
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="cell-footer" style="text-align: center">
+														<div class="frLeft">
+															<div>
+																<input type="button" class="nav previousPage"
+																	accesskey="B" title="Previous Page"
+																	aria-label="Previous Page" data-pushstate="true"
+																	value="" onclick="formSubmit(2)">
+															</div>
+														</div>
+														<div class="fr">
+															<div class="btnBottomWrapper">
+																<input type="button" class="nav nextPage"
+																	id="btnNextBottom" title="Next Page"
+																	aria-label="Next Page" data-pushstate="true" value=""
+																	onclick="formSubmit(4)">
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<script type="text/javascript">
+    wiz.hasValidationChanged = false;
+    wiz.pageListJson = [];
+    wiz.stateCustomUI = '';
+    wiz.pageChanged();
+
+    if (document.title == 'Intelledox Infiniti') {
+        document.title = 'New Quotation MVP 2 Prod - SP - Product Feature - Jade';
+    }
+                        </script>
+								<!--[if lte IE 9]>
+<script type="text/javascript">
+    $('#up input[placeholder]').placeholder();
+</script>
+<![endif]-->
+							</div>
+
+							<div id="popupModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" style="text-align: center">
+									<div class="modal-content modal-insert"></div>
+								</div>
+							</div>
+							<div id="popupLargeModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog modal-lg" style="text-align: center">
+									<div class="modal-content modal-lg-insert"></div>
+								</div>
+							</div>
+
+							<div id="popupLargeDraggableModal" class="modal fade"
+								role="dialog" aria-hidden="true">
+								<div id="draggableDialog" class="modal-dialog modal-lg"
+									style="text-align: center">
+									<div class="modal-content modal-lgd-insert"></div>
+								</div>
+							</div>
+							<div id="popupFullscreenModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog modal-fullscreen"
+									style="text-align: center">
+									<div class="modal-content modal-lgf-insert"></div>
+								</div>
+							</div> <script type="text/javascript">
+    $(".modal-fullscreen").on('show.bs.modal', function () {
+        setTimeout(function () {
+            $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+        }, 0);
+    });
+    $(".modal-fullscreen").on('hidden.bs.modal', function () {
+        $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+    });
+  
+        </script>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="modal" id="waitShort-modal" style="display: none;"></div>
+			<div class="modal" id="wait-modal" title="Loading..."
+				style="display: none;">
+				<div class="modal-dialog wait-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div style="text-align: center" aria-live="assertive">
+								<div id="wait-spinner" title="Loading..."
+									aria-label="Loading...">
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="previewWin"
+				style="display: none; position: absolute; z-index: 1000"></div>
+			<span id="wizFooter"> <script>
+$('#wait-spinner').append('<div></div><div></div><div></div>');
+</script>
+			</span>
+		</div>
+	</form>
+
+	<script src="/static/js/general_helper.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function formSubmit(e) {
+			var newUrl = "/quotation/step/"+e;
+			$("#aspnetForm").attr('action', newUrl);
+			$("#aspnetForm").submit();
+		}
+	</script>
+
+
+	<script type="text/javascript">
+    $('#Q19').blur('input propertychange', function() { 
+        var test = $(this).val();
+        var money = fmoney(test);
+        console.log(money);
+        $(this).val(money);
+    });
+    function fmoney(val) { 
+        n = 2; 
+        s= val;
+        s = parseFloat((s + "").replace(/[^\d\.-]/g, "")).toFixed(n) + ""; 
+        var l = s.split(".")[0].split("").reverse(), r = s.split(".")[1]; 
+        t = ""; 
+        for (i = 0; i < l.length; i++) { 
+            t += l[i] + ((i + 1) % 3 == 0 && (i + 1) != l.length ? "," : ""); 
+        } 
+        return t.split('').reverse().join('') ;
+    }
+
+	</script>
+
+
+</body>
+</html>

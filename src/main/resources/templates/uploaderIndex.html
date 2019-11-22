@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<!-- saved from url=(0156)https://www.insurancedistributor.hsbc.com.sg/produce/wizard/85b20120-4007-47c1-95ac-347359eda1c0/?prepared=true&logGuid=8ade47da-3384-4f7b-96cb-0a5fef30bb64 -->
+<html dir="ltr" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HSBC Insurance Singapore | Distributor Portal</title>
+<link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+<link href="static/css/cdnbundle.css" rel="stylesheet" type="text/css">
+<link href="static/css/hsbc.css" type="text/css" rel="stylesheet">
+<link href="static/css/skin.css" rel="stylesheet" id="siteSkin">
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/jquery-ui-1.12.1.custom.min.js"></script>
+<script src="static/js/location.js"></script>
+
+<script src="static/js/datatables.min.js" id="dataTableJs"></script>
+<script src="static/js/dataTables.rowGroup.js" id="dataTableRowJs"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/jquery.history.js"></script>
+<script src="static/js/wizard.js"></script>
+<script src="static/js/toastr.js"></script>
+</head>
+<body class="projectType-dashboard">
+	<a id="top"></a>
+
+	<span id="wizHeader"></span>
+	<header class="navbar navbar-inverse navbar-fixed-top ix-nav">
+		<div class="container-fluid">
+			<div id="navbar-header">
+				<button class="navbar-toggle collapsed" type="button"
+					data-toggle="collapse" data-target=".ix-pagenav" id="ix-pagenavbtn"
+					style="display: none;">
+					<span class="sr-only">Toggle form navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+
+
+				<a class="navbar-brand analyticslog" id="lnkHomeHead"
+					data-analyticsid="goToHome">
+					<div id="ixInfinitiLogo">
+						<img src="static/img/produce.svg" alt="Infiniti Logo" height="56"
+							width="165"><span class="sr-only">Infiniti</span>
+					</div>
+				</a>
+			</div>
+			<nav>
+				<ul class="nav navbar-nav navbar-home">
+					<li><a id="lnkHome" title="Home" class="analyticslog"
+						data-analyticsid="goToHome">Home</a></li>
+				</ul>
+				<p class="navbar-text form-title hidden-xs">MVP2 - User
+					Management</p>
+
+				<form th:action="@{/logout}" method="post">
+					<ul class="nav navbar-nav navbar-right">
+						<input type="hidden" th:value="${_csrf.parameterName}"
+							id="paramId"></input>
+						<input type="hidden" th:value="${_csrf.token}" id="paramVal"></input>
+						<li id="loggedInUser">Welcome [[${profile}]]</li>
+
+						<li id="LogoutMenu"><button id="lnkSignOut"
+								class="signout-link analyticslog" data-analyticsid="logoff">Log
+								Out</button></li>
+
+					</ul>
+				</form>
+
+			</nav>
+		</div>
+	</header>
+	<input type="hidden" id="exitMessage"
+		value="Are you sure you wish to leave this form?">
+	<input type="hidden" id="savePopupTitle" value="Save">
+	<input type="hidden" id="reassignPopupTitle" value="Reassign">
+	<input type="hidden" id="uploadPopupTitle" value="Upload">
+	<input type="hidden" id="importPopupTitle" value="Import">
+	<input type="hidden" id="validateNumber"
+		value="A valid number is required">
+	<input type="hidden" id="validateDate" value="A valid date is required">
+	<input type="hidden" id="validateRequired"
+		value="This is a required field">
+	<input type="hidden" id="validateMonths"
+		value="[&quot;jan&quot;,&quot;feb&quot;,&quot;mar&quot;,&quot;apr&quot;,&quot;may&quot;,&quot;jun&quot;,&quot;jul&quot;,&quot;aug&quot;,&quot;sep&quot;,&quot;oct&quot;,&quot;nov&quot;,&quot;dec&quot;,&quot;january&quot;,&quot;february&quot;,&quot;march&quot;,&quot;april&quot;,&quot;june&quot;,&quot;july&quot;,&quot;august&quot;,&quot;september&quot;,&quot;october&quot;,&quot;november&quot;,&quot;december&quot;]">
+	<input type="hidden" name="Latitude" id="Latitude">
+	<input type="hidden" name="Longitude" id="Longitude">
+	<input type="hidden" name="Warn" id="Warn">
+
+	<div class="container-fluid ix-header-body wizardContent">
+		<table width="100%" class="NoPadding NoSpacing" role="presentation">
+			<tbody>
+				<tr>
+					<td id="Sections" style="display: none;">
+						<div class="collapse navbar-collapse ix-pagenav" role="navigation">
+
+							<div id="topBar"></div>
+
+							<div id="OptionPanel">
+								<div id="plhCustomUI"></div>
+								<div id="pagesList"></div>
+							</div>
+							<div id="ProjectAnswerFiles"></div>
+						</div>
+					</td>
+					<td id="Questions" style="vertical-align: top" class="noNavPane">
+						<form action="#" id="aspnetForm" method="post"
+							novalidate="novalidate">
+							<div id="up">
+
+								<script type="text/javascript">
+    wiz.overridePostback = false;
+    wiz.clearWaitTimer();
+    wiz.closeWaitDialog();
+</script>
+								<table width="100%" class="NoPadding NoSpacing"
+									role="presentation">
+									<tbody>
+										<tr>
+											<td id="QuestionsInner" style="vertical-align: top"><input
+												type="hidden" id="custAction" name="custAction"> <input
+												type="hidden" id="hidNextGroup" name="hidNextGroup">
+												<input type="hidden" id="hidValidate" name="hidValidate">
+												<input type="hidden" id="hidNextRepeatIndex"
+												name="hidNextRepeatIndex"> <input type="hidden"
+												id="hidSaveDescription" name="hidSaveDescription"> <input
+												type="hidden" id="hidReassignEmail" name="hidReassignEmail">
+												<input type="hidden" id="hidReassignName"
+												name="hidReassignName"> <input type="hidden"
+												id="hidSavedInProgress" name="hidSavedInProgress"
+												value="00000000-0000-0000-0000-000000000000"> <input
+												type="hidden" id="hidFragmentGuid" name="fragmentGuid">
+												<input type="hidden" id="hidObjectId" name="objectId">
+												<input type="hidden" id="hidRepeatPath" name="repeatPath">
+												<input type="hidden" id="hidCurrentPage"
+												name="hidCurrentPage" value="0"> <input
+												type="hidden" id="hidCurrentRepeat" name="hidCurrentRepeat"
+												value="0"> <input type="hidden" id="hasWorkflow"
+												value="0"> <input type="hidden" id="hidLogGuid"
+												name="hidLogGuid"
+												value="8ade47da-3384-4f7b-96cb-0a5fef30bb64"> <input
+												type="hidden" id="hidHasManualSaved"
+												name="hidHasManualSaved" value="0">
+												<div
+													style="z-index: 1000; position: absolute; display: none; overflow: hidden; width: 315px"
+													class="HelpText" id="HelpText" tabindex="-1">
+													<span></span>
+													<table align="right" role="presentation">
+														<tbody>
+															<tr>
+																<td><a onclick="wiz.hideHelp(); return false;"
+																	href="#" id="closeHelp">Close Help</a></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="Group "
+													id="P12c14fc0-87f1-4b8c-ac9a-9962ead59f29"
+													onkeypress="return wiz.fireDefaultButton(event, &#39;btnNextTop&#39;)">
+													<div>
+														<table class="NoPadding NoSpacing" width="100%"
+															role="presentation">
+															<tbody>
+																<tr>
+																	<td>
+																		<h2 class="page-title" id="page-title" tabindex="0">User
+																			Management</h2>
+																	</td>
+																	<td class="pageNav"></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div id="PageBody">
+
+														<div class="question-group ">
+															<div class="question-body ">
+																<div id="Q10" class="question-label">&nbsp;</div>
+															</div>
+
+														</div>
+
+														<div class="ls ">
+															<h3 class="lsh">User Management</h3>
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell lccell l-cell-header"
+																		style="width: 25%"></div>
+																	<div class="l-cell lccell l-cell-header"
+																		style="width: 12%"></div>
+																	<div class="l-cell lccell l-cell-header"
+																		style="width: 25%"></div>
+																	<div class="l-cell lccell l-cell-header"
+																		style="width: 12%"></div>
+																	<div class="l-cell lccell l-cell-header"
+																		style="width: 25%"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+																					<div id="Q1Text" class="qtdiv sr-only"
+																						role="heading">Bulk User Upload</div>
+
+
+
+																					<div class="btn-group">
+																						<button id="labelQ1" name="labelQ1"
+																							class="btn tile  tile-wd "
+																							onmouseover="wiz.changeTileFocusRing(this, originalRingQ1, focusRingQ1); "
+																							onmouseout="wiz.changeTileFocusRing(this, originalRingQ1, focusRingQ1); "
+																							onclick="wiz.goToProject(&#39;/produce/&#39;, &#39;79d53d3d-b2dc-4fb3-97ce-4eacb29455e1&#39;, &#39;&#39;, &#39;&#39;, &#39;&#39;);return false;"
+																							style="border-color: rgb(227, 6, 19); background-color: rgb(227, 6, 19); background-image: linear-gradient(rgb(227, 6, 19) 0%, rgb(207, 0, 0) 100%);">
+																							<span class="tile-content">Bulk User
+																								Upload</span>
+																						</button>
+																					</div>
+
+																					<script>
+    var borderQ1 =  '';
+    var backgroundQ1 =  '';
+    var gradientQ1 =  '';
+    var originalRingQ1 = '';
+    var focusRingQ1 = wiz.rgbToHex('');
+    var toggleStyleQ1 = wiz.rgbToHex('');
+
+    $(document).ready(function() {
+        var element = document.getElementById('Q1');
+        var label = document.getElementById('labelQ1');
+        if (label) {
+            label.style.borderColor = '#E30613';
+            label.style.backgroundColor = '#E30613';
+            label.style.backgroundImage = 'linear-gradient(to bottom,#E30613 0%,#cf0000 100%)';
+        }
+        var colour1 = wiz.getTileBorderColour('labelQ1');;
+        wiz.addValueToTileDictionary('borderQ1', colour1);
+        var colour2 = '#E30613';
+        wiz.addValueToTileDictionary('backgroundQ1', colour2);
+        var colour3= '#cf0000';
+        wiz.addValueToTileDictionary('gradientQ1', colour3);
+        borderQ1 =  wiz.getValueFromTileDictionary('borderQ1');
+        backgroundQ1 =  wiz.getValueFromTileDictionary('backgroundQ1');
+        gradientQ1 =  wiz.getValueFromTileDictionary('gradientQ1');
+        originalRingQ1 = colour2;
+        if (focusRingQ1 === '') {
+            focusRingQ1 = wiz.rgbToHex(wiz.getStyleBySelector('.tile:hover').borderColor);
+        }
+        if (label && element && element.checked === true && toggleStyleQ1 !== "") {
+            label.style.borderColor = '';
+            label.style.backgroundColor = '';
+            label.style.backgroundImage = 'linear-gradient(to bottom, 0%, 100%)';
+            originalRingQ1 = '';
+        }
+    });
+</script>
+
+
+																				</div>
+
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q5" class="question-label">Perform
+																						bulk user additions and deletions by uploading a
+																						CSV file.</div>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																	<div class="l-cell lccell ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q8" class="question-label">&nbsp;</div>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																	<div class="l-cell lccell ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+																					<div id="Q2Text" class="qtdiv sr-only"
+																						role="heading">Bulk Product Access</div>
+
+
+
+																					<div class="btn-group">
+																						<button id="labelQ2" name="labelQ2"
+																							class="btn tile  tile-wd "
+																							onmouseover="wiz.changeTileFocusRing(this, originalRingQ2, focusRingQ2); "
+																							onmouseout="wiz.changeTileFocusRing(this, originalRingQ2, focusRingQ2); "
+																							onclick="wiz.goToProject(&#39;/produce/&#39;, &#39;5de8bc95-a164-480c-a6d4-1206d285bd96&#39;, &#39;&#39;, &#39;&#39;, &#39;&#39;);return false;"
+																							style="border-color: rgb(227, 6, 19); background-color: rgb(227, 6, 19); background-image: linear-gradient(rgb(227, 6, 19) 0%, rgb(207, 0, 0) 100%);">
+																							<span class="tile-content">Bulk Product
+																								Access</span>
+																						</button>
+																					</div>
+
+																					<script>
+    var borderQ2 =  '';
+    var backgroundQ2 =  '';
+    var gradientQ2 =  '';
+    var originalRingQ2 = '';
+    var focusRingQ2 = wiz.rgbToHex('');
+    var toggleStyleQ2 = wiz.rgbToHex('');
+
+    $(document).ready(function() {
+        var element = document.getElementById('Q2');
+        var label = document.getElementById('labelQ2');
+        if (label) {
+            label.style.borderColor = '#E30613';
+            label.style.backgroundColor = '#E30613';
+            label.style.backgroundImage = 'linear-gradient(to bottom,#E30613 0%,#cf0000 100%)';
+        }
+        var colour1 = wiz.getTileBorderColour('labelQ2');;
+        wiz.addValueToTileDictionary('borderQ2', colour1);
+        var colour2 = '#E30613';
+        wiz.addValueToTileDictionary('backgroundQ2', colour2);
+        var colour3= '#cf0000';
+        wiz.addValueToTileDictionary('gradientQ2', colour3);
+        borderQ2 =  wiz.getValueFromTileDictionary('borderQ2');
+        backgroundQ2 =  wiz.getValueFromTileDictionary('backgroundQ2');
+        gradientQ2 =  wiz.getValueFromTileDictionary('gradientQ2');
+        originalRingQ2 = colour2;
+        if (focusRingQ2 === '') {
+            focusRingQ2 = wiz.rgbToHex(wiz.getStyleBySelector('.tile:hover').borderColor);
+        }
+        if (label && element && element.checked === true && toggleStyleQ2 !== "") {
+            label.style.borderColor = '';
+            label.style.backgroundColor = '';
+            label.style.backgroundImage = 'linear-gradient(to bottom, 0%, 100%)';
+            originalRingQ2 = '';
+        }
+    });
+</script>
+
+
+																				</div>
+
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q6" class="question-label">Perform
+																						bulk User Product Access updates by uploading a
+																						CSV file.</div>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																	<div class="l-cell lccell ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q9" class="question-label"></div>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																	<div class="l-cell lccell ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+																					<div id="Q3Text" class="qtdiv sr-only"
+																						role="heading">Manual Product Access</div>
+
+
+
+																					<div class="btn-group">
+																						<button id="labelQ3" name="labelQ3"
+																							class="btn tile  tile-wd "
+																							onmouseover="wiz.changeTileFocusRing(this, originalRingQ3, focusRingQ3); "
+																							onmouseout="wiz.changeTileFocusRing(this, originalRingQ3, focusRingQ3); "
+																							onclick="wiz.goToProject(&#39;/produce/&#39;, &#39;6bceef4d-a865-45b6-a3a0-6fb24a80f628&#39;, &#39;&#39;, &#39;&#39;, &#39;&#39;);return false;"
+																							style="border-color: rgb(227, 6, 19); background-color: rgb(227, 6, 19); background-image: linear-gradient(rgb(227, 6, 19) 0%, rgb(207, 0, 0) 100%);">
+																							<span class="tile-content">Manual Product
+																								Access</span>
+																						</button>
+																					</div>
+
+																					<script>
+    var borderQ3 =  '';
+    var backgroundQ3 =  '';
+    var gradientQ3 =  '';
+    var originalRingQ3 = '';
+    var focusRingQ3 = wiz.rgbToHex('');
+    var toggleStyleQ3 = wiz.rgbToHex('');
+
+    $(document).ready(function() {
+        var element = document.getElementById('Q3');
+        var label = document.getElementById('labelQ3');
+        if (label) {
+            label.style.borderColor = '#E30613';
+            label.style.backgroundColor = '#E30613';
+            label.style.backgroundImage = 'linear-gradient(to bottom,#E30613 0%,#cf0000 100%)';
+        }
+        var colour1 = wiz.getTileBorderColour('labelQ3');;
+        wiz.addValueToTileDictionary('borderQ3', colour1);
+        var colour2 = '#E30613';
+        wiz.addValueToTileDictionary('backgroundQ3', colour2);
+        var colour3= '#cf0000';
+        wiz.addValueToTileDictionary('gradientQ3', colour3);
+        borderQ3 =  wiz.getValueFromTileDictionary('borderQ3');
+        backgroundQ3 =  wiz.getValueFromTileDictionary('backgroundQ3');
+        gradientQ3 =  wiz.getValueFromTileDictionary('gradientQ3');
+        originalRingQ3 = colour2;
+        if (focusRingQ3 === '') {
+            focusRingQ3 = wiz.rgbToHex(wiz.getStyleBySelector('.tile:hover').borderColor);
+        }
+        if (label && element && element.checked === true && toggleStyleQ3 !== "") {
+            label.style.borderColor = '';
+            label.style.backgroundColor = '';
+            label.style.backgroundImage = 'linear-gradient(to bottom, 0%, 100%)';
+            originalRingQ3 = '';
+        }
+    });
+</script>
+
+
+																				</div>
+
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q7" class="question-label">Manually
+																						select and update User Product Access.</div>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="ls ">
+															<h3 class="lsh">My Approval Tasks</h3>
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+
+																					<input type="hidden" id="Q11_hidSelectedIndex"
+																						name="Q11_hidSelectedIndex" value="-1">
+																					<div id="Q11_label-warning" class="label-warning"
+																						hidden=""></div>
+																					<div id="Q11_offline" hidden="">
+																						<span class="wrn">Offline</span>
+																					</div>
+																					<div id="Q11_gridResults"
+																						class="row datagrid-table">
+																						<div id="grdData_Q11_wrapper"
+																							class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+																							<div class="row">
+																								<div class="col-sm-6"></div>
+																								<div class="col-sm-6">
+																									<div id="grdData_Q11_filter"
+																										class="dataTables_filter">
+																										<label><input type="search"
+																											class="form-control input-sm"
+																											placeholder="Search"
+																											aria-controls="grdData_Q11"></label>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="row">
+																								<div class="col-sm-12">
+																									<table id="grdData_Q11"
+																										class="table table-bordered display dt-responsive dataTable no-footer dtr-inline"
+																										width="100%" cellspacing="0"
+																										data-selectionfield="Q11_hidSelectedIndex"
+																										role="grid"
+																										aria-describedby="grdData_Q11_info">
+																										<thead>
+																											<tr role="row">
+																												<th class="sorting" tabindex="0"
+																													aria-controls="grdData_Q11" rowspan="1"
+																													colspan="1"
+																													aria-label="Date Assigned: activate to sort column ascending">Date
+																													Assigned</th>
+																												<th class="sorting" tabindex="0"
+																													aria-controls="grdData_Q11" rowspan="1"
+																													colspan="1"
+																													aria-label="Assigned By: activate to sort column ascending">Assigned
+																													By</th>
+																												<th class="sorting" tabindex="0"
+																													aria-controls="grdData_Q11" rowspan="1"
+																													colspan="1"
+																													aria-label="State: activate to sort column ascending">State</th>
+																												<th class="sorting" tabindex="0"
+																													aria-controls="grdData_Q11" rowspan="1"
+																													colspan="1"
+																													aria-label="Comment: activate to sort column ascending">Comment</th>
+																												<th class="no-sort sorting_disabled"
+																													rowspan="1" colspan="1" aria-label="Launch">Launch</th>
+																											</tr>
+																										</thead>
+																										<tbody>
+																											<tr class="odd">
+																												<td valign="top" colspan="5"
+																													class="dataTables_empty">Nothing found</td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</div>
+																							</div>
+																							<div class="row">
+																								<div class="col-sm-5">
+																									<div class="dataTables_info"
+																										id="grdData_Q11_info" role="status"
+																										aria-live="polite"></div>
+																								</div>
+																								<div class="col-sm-7">
+																									<div
+																										class="dataTables_paginate paging_simple_numbers"
+																										id="grdData_Q11_paginate"
+																										style="display: none;">
+																										<ul class="pagination">
+																											<li class="paginate_button previous disabled"
+																												id="grdData_Q11_previous"><a
+																												href="https://www.insurancedistributor.hsbc.com.sg/produce/wizard/85b20120-4007-47c1-95ac-347359eda1c0/?prepared=true&amp;logGuid=8ade47da-3384-4f7b-96cb-0a5fef30bb64#"
+																												aria-controls="grdData_Q11" data-dt-idx="0"
+																												tabindex="0">Previous</a></li>
+																											<li class="paginate_button next disabled"
+																												id="grdData_Q11_next"><a
+																												href="https://www.insurancedistributor.hsbc.com.sg/produce/wizard/85b20120-4007-47c1-95ac-347359eda1c0/?prepared=true&amp;logGuid=8ade47da-3384-4f7b-96cb-0a5fef30bb64#"
+																												aria-controls="grdData_Q11" data-dt-idx="1"
+																												tabindex="0">Next</a></li>
+																										</ul>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+
+
+
+																					<script type="text/javascript">
+    function fetchDataQ11() {
+       
+
+ 
+        function createGrid(data) {
+            if (data.cacheWarning) {
+                $('#Q11_label-warning').show();
+            }
+
+            if (data.error != null || data.columns.length === 0) {
+                $('#Q11_gridResults').append(data.error);
+                $('#grdData_Q11').hide();
+                if (data.displayOffline) {
+                    $('#Q11_offline').show();
+                }
+                return;
+            }
+
+            wiz.addScript('dataTableJs', '/produce/scripts/datatables.min.js').then(function () {
+                return wiz.addScript('dataTableRowJs', '/produce/scripts/dataTables.rowGroup.js');
+            }).then(function () {
+
+            var logInteractions = false;
+            var isMultiple = false;
+            var thead = $('#grdData_Q11 thead tr');
+            var existingHeaders = thead.children('th').length > 0;
+            var groupingIndex = -1;
+
+            for (var colIndex = 0; colIndex < data.columns.length; colIndex++) {
+                if (data.columns[colIndex].name === '') {
+                    groupingIndex = colIndex;
+                }
+                if (!existingHeaders) {
+                    var header = '<th class="' + (data.columns[colIndex].nosort ? "no-sort" : "") + ' ' + (logInteractions ? 'Q11_focussortclick' : '') + '" ' + (logInteractions ? 'data-analyticsid="' + "Unique Field_TaskListStateId_q11" + "\" data-analyticsevent=\"dataGridSort " + data.columns[colIndex].displayname + "\"" : "") + '>' + data.columns[colIndex].displayname + '</th>';
+                    thead.append(header);
+                }
+            }
+
+            var t = $('#grdData_Q11').DataTable({
+                destroy: true,
+                data: data.data,
+                order: [],
+                columnDefs: (groupingIndex > -1 ? [{ targets: 'no-sort', orderable: false }, { 'visible': false, 'targets': groupingIndex }] : [{ targets: 'no-sort', orderable: false }]),
+                rowGroup: (groupingIndex > -1 ? {
+                    startRender: function (rows, group) {
+                        return $('<tr></tr>')
+                            .append(
+                                $('<th></th>')
+                                    .attr('colspan', $(this.s.dt.columns().header()).filter(':visible').length)
+                                    .append(group)
+                            );
+                    },
+                    endRender: null,
+                    dataSrc: groupingIndex
+                } : undefined),
+                lengthChange: false,
+                autoWidth: false,
+                language: {
+                    search: "_INPUT_",
+                    searchPlaceholder: 'Search',
+                    zeroRecords: 'Nothing found',
+                    infoEmpty: 'No records available',
+                    infoFiltered: '(filtered from _MAX_ total records)',
+                },
+                    select: { style: "single", info: false },
+                searching: true,
+                pageLength: 20,
+                stateSave: true,
+                stateDuration: -1, //Use session storage
+                stateSaveCallback: function (settings, data) {
+                    localStorage.setItem("#Q11_gridResults" + $('#hidLogGuid').val(), JSON.stringify(data));
+                },
+                stateLoadCallback: function () {
+                    try {
+                        return JSON.parse(localStorage.getItem("#Q11_gridResults" + $('#hidLogGuid').val()));
+                    } catch (e) { }
+                },
+                responsive: true,
+                "fnDrawCallback": function (oSettings) {
+                    if (oSettings._iDisplayLength > oSettings.fnRecordsDisplay()) {
+                        $(oSettings.nTableWrapper).find('#grdData_Q11_paginate').hide();
+                    } else {
+                        $(oSettings.nTableWrapper).find('#grdData_Q11_paginate').show();
+                    }
+                    if (logInteractions) {
+                        $('#grdData_Q11_paginate .paginate_button').each(function () {
+                            $(this).bind('click', function (e) {
+                                var focusNode = "Unique Field_TaskListStateId_q11";
+                                var eventNode = "dataGridPage " + $(this).find('a').text();
+                                wiz.dataAnalyticsFocusAndBlur(focusNode, eventNode);
+                            });
+                        });
+                    }
+                },
+                "infoCallback": function (settings, start, end, max, total, pre) {
+                    var api = this.api();
+                    var pageInfo = api.page.info();
+                    if (pageInfo.pages <= 1) {
+                        return '';
+                    }
+                    var output = 'Showing page {0} of {1}';
+                    return output.replace('{0}', (pageInfo.page + 1)).replace('{1}', pageInfo.pages);
+                },
+                "initComplete": function (settings, json) {
+                    if (logInteractions) {
+                            
+                            $('#grdData_Q11_filter input').addClass("Q11_focussearch").attr('data-analyticsid', 'Unique Field_TaskListStateId_q11').attr('data-analyticsevent', 'dataGridSearch');
+                            $(".Q11_focussearch").focus(function () {
+                                var focusNode = $(this).data('analyticsid');
+                                var eventNode = $(this).data('analyticsevent');
+                                wiz.dataAnalyticsFocus(focusNode, eventNode);
+                            });
+                            $(".Q11_focussearch").blur(function () {
+                                wiz.dataAnalyticsBlur();
+                            });
+                            
+
+                        $(".Q11_focussortclick").click(function () {
+                            var focusNode = $(this).data('analyticsid');
+                            var eventNode = $(this).data('analyticsevent');
+                            wiz.dataAnalyticsFocusAndBlur(focusNode, eventNode);
+                        });
+                    }
+                }
+            });
+
+
+            $.fn.dataTable.ext.classes.sPaging = "Q11";
+
+            //Responsive seems to only hide one column at a time. Recurse down until we fit.
+            t.on('responsive-resize', function (e, datatable, columns) {
+                $("#grdData_Q11").DataTable().responsive.recalc();
+            });
+
+            $("#grdData_Q11").DataTable().responsive.recalc();
+
+            t.on('select', function (e, dt, type, indexes) {
+                if (logInteractions) {
+                    wiz.dataAnalyticsFocusAndBlur('Unique Field_TaskListStateId_q11', "dataGridSelect " + indexes);
+                }
+
+                ;
+
+                if ( type === 'row' ) {
+                    if (isMultiple) {
+                        selectionField = $('#' + $('#grdData_Q11').data('selectionfield'));
+
+                        if (selectionField.val() == 'None' || selectionField.val() === '') {
+                            // This is the first row to be selected - so remove the "None"
+                            selectionField.val(indexes);
+                        } else {
+                            selectionField.val(selectionField.val() + "," + indexes);
+                        }
+                    }
+                    else
+                    {
+                        selectionField = $('#' + $('#grdData_Q11').data('selectionfield'));
+                        selectionField.val(indexes);
+                    }
+                }
+            } );
+            t.on('deselect', function (e, dt, type, indexes) {
+                if (logInteractions) {
+                    wiz.dataAnalyticsFocusAndBlur('Unique Field_TaskListStateId_q11', "dataGridDeselect " + indexes);
+                }
+
+                if ( type === 'row' ) {
+                    if (isMultiple) {
+                        selectionField = $('#' + $('#grdData_Q11').data('selectionfield'));
+                        var selectedIndices;
+                        if (selectionField.val() === '') {
+                            selectedIndices = [];
+                        } else {
+                            selectedIndices = selectionField.val().split(',');
+                        }
+
+                        if (indexes.length > 0) {
+                            wiz.removeAt(selectedIndices, wiz.indexOf(selectedIndices, indexes[0].toString()));
+                            selectionField.val(selectedIndices.join(','));
+                        }
+                    }
+                }
+            });
+
+            });
+        }
+
+    }
+
+    fetchDataQ11();
+</script>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="cell-footer" style="text-align: center">
+														<div class="fr"></div>
+													</div>
+												</div></td>
+										</tr>
+									</tbody>
+								</table>
+								<script type="text/javascript">
+    wiz.hasValidationChanged = true;
+    wiz.pageListJson = [];
+    wiz.stateCustomUI = '';
+    wiz.pageChanged();
+
+    if (document.title == 'Intelledox Infiniti') {
+        document.title = 'MVP2 - User Management - User Management';
+    }
+                        </script>
+								<!--[if lte IE 9]>
+<script type="text/javascript">
+    $('#up input[placeholder]').placeholder();
+</script>
+<![endif]-->
+
+							</div>
+
+							<div id="popupModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" style="text-align: center">
+									<div class="modal-content modal-insert"></div>
+								</div>
+							</div>
+							<div id="popupLargeModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog modal-lg" style="text-align: center">
+									<div class="modal-content modal-lg-insert"></div>
+								</div>
+							</div>
+
+							<div id="popupLargeDraggableModal" class="modal fade"
+								role="dialog" aria-hidden="true">
+								<div id="draggableDialog" class="modal-dialog modal-lg"
+									style="text-align: center">
+									<div class="modal-content modal-lgd-insert"></div>
+								</div>
+							</div>
+							<div id="popupFullscreenModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog modal-fullscreen"
+									style="text-align: center">
+									<div class="modal-content modal-lgf-insert"></div>
+								</div>
+							</div>
+						</form> <script type="text/javascript">
+
+$("#lnkSignOut111").on('click',function(){
+	var name=$('#paramId').val();
+	var val=$('#paramVal').val();
+	var param={"_csrf":val};
+	console.log(param);
+	 $.post("/logout",param,function(result){
+		    $("span").html(result);
+		  });
+});
+
+
+
+
+
+</script> <script type="text/javascript">
+    $(".modal-fullscreen").on('show.bs.modal', function () {
+        setTimeout(function () {
+            $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+        }, 0);
+    });
+    $(".modal-fullscreen").on('hidden.bs.modal', function () {
+        $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+    });
+    $('#up').on('click', 'input[type="submit"]', function (e) {
+        e.preventDefault();
+        if ($(this).data('pushstate') == true) {
+            wiz.formIsDirty = true;
+            wiz.pushingState = true;
+        }
+        if ($(this).data('repeatpath') != null) {
+            wiz.setPath($(this).data('fragmentguid'), $(this).data('objectid'), $(this).data('repeatpath'));
+        }
+        if ($(this).data('command') != null) {
+            wiz.doAjaxPost($(this).data('command'));
+        } else {
+            wiz.doAjaxPost($('#aspnetForm').prop('action'), $(this).prop('name'), $(this).val());
+        }
+        this.disabled = true;
+    });
+
+        wiz.logOut(1200000);
+        </script>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="modal" id="waitShort-modal"></div>
+		<div class="modal" id="wait-modal" title="Loading..."
+			style="display: none;">
+			<div class="modal-dialog wait-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div style="text-align: center" aria-live="assertive">
+							<div id="wait-spinner" title="Loading..." aria-label="Loading...">
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="previewWin"
+			style="display: none; position: absolute; z-index: 1000"></div>
+		<span id="wizFooter"> <script src="static/js/general_helper.js">
+</script> <script>
+$('#wait-spinner').append('<div></div><div></div><div></div>');
+</script>
+		</span>
+	</div>
+
+
+	<script src="static/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="static/js/validate.js"></script>
+	<script>
+        wiz.initWizard(false);
+
+        $('body').click(wiz.bodyClick);
+
+        function getWizardUrl(url, callback) {
+            if (wiz.isNative) {
+                NativeFunc("doGetUrl", url, callback);
+            } else {
+                $.ajaxSetup({
+                    cache: false
+                });
+
+                $.get(url, callback);
+            }
+        }
+        function postWizardUrl(formDataCallBack, resultCallBack) {
+            if (wiz.isNative) {
+                resultCallBack(NativeFunc("doPostUrl", formDataCallBack(), resultCallBack));
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+
+	<script>
+        function updateLocation() {
+            return true;
+        }
+    </script>
+
+	<div class="xl-chrome-ext-bar"
+		id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}"
+		style="display: none;">
+		<div class="xl-chrome-ext-bar__logo"></div>
+
+		<a id="xl_chrome_ext_download" href="javascript:;"
+			class="xl-chrome-ext-bar__option">下载视频</a> <a
+			id="xl_chrome_ext_close" href="javascript:;"
+			class="xl-chrome-ext-bar__close"></a>
+	</div>
+</body>
+</html>

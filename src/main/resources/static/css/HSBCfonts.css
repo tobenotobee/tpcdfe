@@ -1,0 +1,220 @@
+@font-face{
+font-family:"UniversNextforHSBCW02-ThCn";
+src:url("UniversNextforHSBCW02-ThCn.eot?#iefix");
+src:url("UniversNextforHSBCW02-ThCn.eot?#iefix") format("eot"),url("UniversNextforHSBCW02-ThCn.woff2") format("woff2"),url("UniversNextforHSBCW02-ThCn.woff") format("woff"),url("UniversNextforHSBCW02-ThCn.ttf") format("truetype"),url("UniversNextforHSBCW02-ThCn.svg#022763aa-0c58-48a4-84ad-6f786c766d72") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-Thin";
+src:url("UniversNextforHSBCW01-Thin.eot?#iefix");
+src:url("UniversNextforHSBCW01-Thin.eot?#iefix") format("eot"),url("UniversNextforHSBCW01-Thin.woff2") format("woff2"),url("UniversNextforHSBCW01-Thin.woff") format("woff"),url("UniversNextforHSBCW01-Thin.ttf") format("truetype"),url("UniversNextforHSBCW01-Thin.svg#970adde9-234f-4e2b-9ff1-a1904806d21e") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-ThIt";
+src:url("UniversNextforHSBCW04-ThIt.eot?#iefix");
+src:url("UniversNextforHSBCW04-ThIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-ThIt.woff2") format("woff2"),url("UniversNextforHSBCW04-ThIt.woff") format("woff"),url("UniversNextforHSBCW04-ThIt.ttf") format("truetype"),url("UniversNextforHSBCW04-ThIt.svg#d0316a59-4195-45b9-860e-8d716843fa25") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-ThIt";
+src:url("UniversNextforHSBCW01SC-ThIt.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-ThIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-ThIt.woff2") format("woff2"),url("UniversNextforHSBCW01SC-ThIt.woff") format("woff"),url("UniversNextforHSBCW01SC-ThIt.ttf") format("truetype"),url("UniversNextforHSBCW01SC-ThIt.svg#b65c914a-1c7a-42a2-9788-a5e96766d346") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-Light";
+src:url("UniversNextforHSBCW01-Light.eot?#iefix");
+src:url("UniversNextforHSBCW01-Light.eot?#iefix") format("eot"),url("../fonts/UniversNextforHSBCW01-Light.woff2") format("woff2"),url("UniversNextforHSBCW01-Light.woff") format("woff"),url("UniversNextforHSBCW01-Light.ttf") format("truetype"),url("UniversNextforHSBCW01-Light.svg#463b151a-1219-4edb-bcef-a0bef310a4b4") format("svg");
+}
+@font-face{
+font-family:"UniversNextW05-Thin";
+src:url("UniversNextW05-Thin.eot?#iefix");
+src:url("UniversNextW05-Thin.eot?#iefix") format("eot"),url("UniversNextW05-Thin.woff2") format("woff2"),url("UniversNextW05-Thin.woff") format("woff"),url("UniversNextW05-Thin.ttf") format("truetype"),url("UniversNextW05-Thin.svg#415d2d98-ad15-41d4-86dd-da3c4c4feeb8") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-Bold";
+src:url("UniversNextforHSBCW06-Bold.eot?#iefix");
+src:url("UniversNextforHSBCW06-Bold.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-Bold.woff2") format("woff2"),url("UniversNextforHSBCW06-Bold.woff") format("woff"),url("UniversNextforHSBCW06-Bold.ttf") format("truetype"),url("UniversNextforHSBCW06-Bold.svg#93c54594-403b-4328-9522-f9dd12d0e3f5") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-Md";
+src:url("UniversNextforHSBCW06-Md.eot?#iefix");
+src:url("UniversNextforHSBCW06-Md.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-Md.woff2") format("woff2"),url("UniversNextforHSBCW06-Md.woff") format("woff"),url("UniversNextforHSBCW06-Md.ttf") format("truetype"),url("UniversNextforHSBCW06-Md.svg#9885db11-fa20-46e5-8888-6bb8a5e3e51a") format("svg");
+}
+@font-face{
+font-family:"UniversNextW05-UltraLight";
+src:url("UniversNextW05-UltraLight.eot?#iefix");
+src:url("UniversNextW05-UltraLight.eot?#iefix") format("eot"),url("UniversNextW05-UltraLight.woff2") format("woff2"),url("UniversNextW05-UltraLight.woff") format("woff"),url("UniversNextW05-UltraLight.ttf") format("truetype"),url("UniversNextW05-UltraLight.svg#5b1699ca-f58c-4b0c-b77a-a6718c4869fe") format("svg");
+}
+@font-face{
+font-family:"UniversNextW05-LightItalic";
+src:url("UniversNextW05-LightItalic.eot?#iefix");
+src:url("UniversNextW05-LightItalic.eot?#iefix") format("eot"),url("UniversNextW05-LightItalic.woff2") format("woff2"),url("UniversNextW05-LightItalic.woff") format("woff"),url("UniversNextW05-LightItalic.ttf") format("truetype"),url("UniversNextW05-LightItalic.svg#7283977a-2eec-4d36-aaf4-7c6e65dde0dc") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-Th";
+src:url("UniversNextforHSBCW06-Th.eot?#iefix");
+src:url("UniversNextforHSBCW06-Th.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-Th.woff2") format("woff2"),url("UniversNextforHSBCW06-Th.woff") format("woff"),url("UniversNextforHSBCW06-Th.ttf") format("truetype"),url("UniversNextforHSBCW06-Th.svg#c0a8aa7b-22c4-4392-b2e6-4f16e316ef9e") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-Rg";
+src:url("UniversNextforHSBCW01-Rg.eot?#iefix");
+src:url("UniversNextforHSBCW01-Rg.eot?#iefix") format("eot"),url("../fonts/UniversNextforHSBCW01-Rg.woff2") format("woff2"),url("UniversNextforHSBCW01-Rg.woff") format("woff"),url("../fonts/UniversNextforHSBCW01-Rg.ttf") format("truetype"),url("UniversNextforHSBCW01-Rg.svg#f6e21306-7414-4007-8d1e-d7969f48bb5a") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-Lt";
+src:url("UniversNextforHSBCW01SC-Lt.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-Lt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-Lt.woff2") format("woff2"),url("UniversNextforHSBCW01SC-Lt.woff") format("woff"),url("UniversNextforHSBCW01SC-Lt.ttf") format("truetype"),url("UniversNextforHSBCW01SC-Lt.svg#f7f59eb3-be9e-4c3c-bb70-6b123a3d8610") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-Light";
+src:url("UniversNextforHSBCW04-Light.eot?#iefix");
+src:url("UniversNextforHSBCW04-Light.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-Light.woff2") format("woff2"),url("UniversNextforHSBCW04-Light.woff") format("woff"),url("UniversNextforHSBCW04-Light.ttf") format("truetype"),url("UniversNextforHSBCW04-Light.svg#686353e1-2fe9-4cbc-a3f9-fec8c229f281") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-Thin";
+src:url("UniversNextforHSBCW04-Thin.eot?#iefix");
+src:url("UniversNextforHSBCW04-Thin.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-Thin.woff2") format("woff2"),url("UniversNextforHSBCW04-Thin.woff") format("woff"),url("UniversNextforHSBCW04-Thin.ttf") format("truetype"),url("UniversNextforHSBCW04-Thin.svg#e08c3809-2e90-49fd-a3d8-e0bfc8f45620") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-Light";
+src:url("UniversNextforHSBCW06-Light.eot?#iefix");
+src:url("UniversNextforHSBCW06-Light.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-Light.woff2") format("woff2"),url("UniversNextforHSBCW06-Light.woff") format("woff"),url("UniversNextforHSBCW06-Light.ttf") format("truetype"),url("UniversNextforHSBCW06-Light.svg#b66cd1ef-45a5-4a7f-81d6-62878e9ee200") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-Md";
+src:url("UniversNextforHSBCW01-Md.eot?#iefix");
+src:url("UniversNextforHSBCW01-Md.eot?#iefix") format("eot"),url("UniversNextforHSBCW01-Md.woff2") format("woff2"),url("UniversNextforHSBCW01-Md.woff") format("woff"),url("UniversNextforHSBCW01-Md.ttf") format("truetype"),url("UniversNextforHSBCW01-Md.svg#078b43da-5286-483f-8c13-680de5062e4a") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-LtIt";
+src:url("UniversNextforHSBCW01SC-LtIt.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-LtIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-LtIt.woff2") format("woff2"),url("UniversNextforHSBCW01SC-LtIt.woff") format("woff"),url("UniversNextforHSBCW01SC-LtIt.ttf") format("truetype"),url("UniversNextforHSBCW01SC-LtIt.svg#0a4783b0-1285-403b-9c13-7e2dcac3e1dd") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-Th";
+src:url("UniversNextforHSBCW01SC-Th.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-Th.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-Th.woff2") format("woff2"),url("UniversNextforHSBCW01SC-Th.woff") format("woff"),url("UniversNextforHSBCW01SC-Th.ttf") format("truetype"),url("UniversNextforHSBCW01SC-Th.svg#b49866b5-f753-4262-a207-14bc4b6c7f33") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-LtIt";
+src:url("UniversNextforHSBCW04-LtIt.eot?#iefix");
+src:url("UniversNextforHSBCW04-LtIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-LtIt.woff2") format("woff2"),url("UniversNextforHSBCW04-LtIt.woff") format("woff"),url("UniversNextforHSBCW04-LtIt.ttf") format("truetype"),url("UniversNextforHSBCW04-LtIt.svg#d1092092-d6b8-43b7-9423-83489c83fb1d") format("svg");
+}
+@font-face{
+font-family:"UniversNextW05-Medium";
+src:url("UniversNextW05-Medium.eot?#iefix");
+src:url("UniversNextW05-Medium.eot?#iefix") format("eot"),url("UniversNextW05-Medium.woff2") format("woff2"),url("UniversNextW05-Medium.woff") format("woff"),url("UniversNextW05-Medium.ttf") format("truetype"),url("UniversNextW05-Medium.svg#e208a70b-20cd-4e72-9509-aeb23d9cb92d") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-Rg";
+src:url("UniversNextforHSBCW06-Rg.eot?#iefix");
+src:url("UniversNextforHSBCW06-Rg.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-Rg.woff2") format("woff2"),url("UniversNextforHSBCW06-Rg.woff") format("woff"),url("UniversNextforHSBCW06-Rg.ttf") format("truetype"),url("UniversNextforHSBCW06-Rg.svg#6ff8ae23-bfec-4b1a-8732-51d124c5031b") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-UltLt";
+src:url("UniversNextforHSBCW01-UltLt.eot?#iefix");
+src:url("UniversNextforHSBCW01-UltLt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01-UltLt.woff2") format("woff2"),url("UniversNextforHSBCW01-UltLt.woff") format("woff"),url("UniversNextforHSBCW01-UltLt.ttf") format("truetype"),url("UniversNextforHSBCW01-UltLt.svg#95a9575a-d782-42be-bd62-976b89e1e37c") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-LtIt";
+src:url("UniversNextforHSBCW06-LtIt.eot?#iefix");
+src:url("UniversNextforHSBCW06-LtIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-LtIt.woff2") format("woff2"),url("UniversNextforHSBCW06-LtIt.woff") format("woff"),url("UniversNextforHSBCW06-LtIt.ttf") format("truetype"),url("UniversNextforHSBCW06-LtIt.svg#1df8a1b1-4f04-4de5-b07d-0bd4351826e7") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-ThIt";
+src:url("UniversNextforHSBCW06-ThIt.eot?#iefix");
+src:url("UniversNextforHSBCW06-ThIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-ThIt.woff2") format("woff2"),url("UniversNextforHSBCW06-ThIt.woff") format("woff"),url("UniversNextforHSBCW06-ThIt.ttf") format("truetype"),url("UniversNextforHSBCW06-ThIt.svg#c60a570d-27df-45de-82bc-674570cf4ede") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-UltLt";
+src:url("UniversNextforHSBCW04-UltLt.eot?#iefix");
+src:url("UniversNextforHSBCW04-UltLt.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-UltLt.woff2") format("woff2"),url("UniversNextforHSBCW04-UltLt.woff") format("woff"),url("UniversNextforHSBCW04-UltLt.ttf") format("truetype"),url("UniversNextforHSBCW04-UltLt.svg#765900e5-1250-4dd4-a509-d511a14f5de8") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW05-ThCn";
+src:url("UniversNextforHSBCW05-ThCn.eot?#iefix");
+src:url("UniversNextforHSBCW05-ThCn.eot?#iefix") format("eot"),url("UniversNextforHSBCW05-ThCn.woff2") format("woff2"),url("UniversNextforHSBCW05-ThCn.woff") format("woff"),url("UniversNextforHSBCW05-ThCn.ttf") format("truetype"),url("UniversNextforHSBCW05-ThCn.svg#80b7f54e-cb1e-461f-a44d-aaf4faba3e75") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-UltLtI";
+src:url("UniversNextforHSBCW06-UltLtI.eot?#iefix");
+src:url("UniversNextforHSBCW06-UltLtI.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-UltLtI.woff2") format("woff2"),url("UniversNextforHSBCW06-UltLtI.woff") format("woff"),url("UniversNextforHSBCW06-UltLtI.ttf") format("truetype"),url("UniversNextforHSBCW06-UltLtI.svg#ba976629-0b18-4c02-b2cf-4cb76530e38f") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-Bold";
+src:url("UniversNextforHSBCW01-Bold.eot?#iefix");
+src:url("UniversNextforHSBCW01-Bold.eot?#iefix") format("eot"),url("UniversNextforHSBCW01-Bold.woff2") format("woff2"),url("UniversNextforHSBCW01-Bold.woff") format("woff"),url("UniversNextforHSBCW01-Bold.ttf") format("truetype"),url("UniversNextforHSBCW01-Bold.svg#0d30715f-b532-44cc-b178-66c6b76df46e") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-Rg";
+src:url("UniversNextforHSBCW04-Rg.eot?#iefix");
+src:url("UniversNextforHSBCW04-Rg.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-Rg.woff2") format("woff2"),url("UniversNextforHSBCW04-Rg.woff") format("woff"),url("UniversNextforHSBCW04-Rg.ttf") format("truetype"),url("UniversNextforHSBCW04-Rg.svg#0e25a1f8-2342-475f-a91c-90c718fd2bcc") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-UltLt";
+src:url("UniversNextforHSBCW01SC-UltLt.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-UltLt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-UltLt.woff2") format("woff2"),url("UniversNextforHSBCW01SC-UltLt.woff") format("woff"),url("UniversNextforHSBCW01SC-UltLt.ttf") format("truetype"),url("UniversNextforHSBCW01SC-UltLt.svg#115286e9-af4a-4e04-8cf9-aca7fac885e6") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-Rg";
+src:url("UniversNextforHSBCW01SC-Rg.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-Rg.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-Rg.woff2") format("woff2"),url("UniversNextforHSBCW01SC-Rg.woff") format("woff"),url("UniversNextforHSBCW01SC-Rg.ttf") format("truetype"),url("UniversNextforHSBCW01SC-Rg.svg#b2921ae7-ad9c-4095-95ed-e8505e72c857") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-UltLtIt";
+src:url("UniversNextforHSBCW01-UltLtIt.eot?#iefix");
+src:url("UniversNextforHSBCW01-UltLtIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01-UltLtIt.woff2") format("woff2"),url("UniversNextforHSBCW01-UltLtIt.woff") format("woff"),url("UniversNextforHSBCW01-UltLtIt.ttf") format("truetype"),url("UniversNextforHSBCW01-UltLtIt.svg#aa168b80-1351-4264-8aa4-a51e3a16fa10") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW06-UtLt";
+src:url("UniversNextforHSBCW06-UtLt.eot?#iefix");
+src:url("UniversNextforHSBCW06-UtLt.eot?#iefix") format("eot"),url("UniversNextforHSBCW06-UtLt.woff2") format("woff2"),url("UniversNextforHSBCW06-UtLt.woff") format("woff"),url("UniversNextforHSBCW06-UtLt.ttf") format("truetype"),url("UniversNextforHSBCW06-UtLt.svg#70c36a3b-d295-4a9e-a059-76c9f144dc90") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-ThCn";
+src:url("UniversNextforHSBCW04-ThCn.eot?#iefix");
+src:url("UniversNextforHSBCW04-ThCn.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-ThCn.woff2") format("woff2"),url("UniversNextforHSBCW04-ThCn.woff") format("woff"),url("UniversNextforHSBCW04-ThCn.ttf") format("truetype"),url("UniversNextforHSBCW04-ThCn.svg#edb73086-f3db-4314-80bf-0c786a65bcc2") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-Md";
+src:url("UniversNextforHSBCW04-Md.eot?#iefix");
+src:url("UniversNextforHSBCW04-Md.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-Md.woff2") format("woff2"),url("UniversNextforHSBCW04-Md.woff") format("woff"),url("UniversNextforHSBCW04-Md.ttf") format("truetype"),url("UniversNextforHSBCW04-Md.svg#34eb5ada-4467-4589-8f71-dda95fbe875a") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-LtIt";
+src:url("UniversNextforHSBCW01-LtIt.eot?#iefix");
+src:url("UniversNextforHSBCW01-LtIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01-LtIt.woff2") format("woff2"),url("UniversNextforHSBCW01-LtIt.woff") format("woff"),url("UniversNextforHSBCW01-LtIt.ttf") format("truetype"),url("UniversNextforHSBCW01-LtIt.svg#47e2cfcb-eda2-4c89-bb25-d9c680519a81") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-Md";
+src:url("UniversNextforHSBCW01SC-Md.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-Md.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-Md.woff2") format("woff2"),url("UniversNextforHSBCW01SC-Md.woff") format("woff"),url("UniversNextforHSBCW01SC-Md.ttf") format("truetype"),url("UniversNextforHSBCW01SC-Md.svg#2e861654-ff27-4689-a030-b0f7d588a0ac") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-ThIt";
+src:url("UniversNextforHSBCW01-ThIt.eot?#iefix");
+src:url("UniversNextforHSBCW01-ThIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01-ThIt.woff2") format("woff2"),url("UniversNextforHSBCW01-ThIt.woff") format("woff"),url("UniversNextforHSBCW01-ThIt.ttf") format("truetype"),url("UniversNextforHSBCW01-ThIt.svg#2fe1d07f-aaea-40b7-81cc-06882d42a899") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-UltLtIt";
+src:url("UniversNextforHSBCW01SC-UltLtIt.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-UltLtIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-UltLtIt.woff2") format("woff2"),url("UniversNextforHSBCW01SC-UltLtIt.woff") format("woff"),url("UniversNextforHSBCW01SC-UltLtIt.ttf") format("truetype"),url("UniversNextforHSBCW01SC-UltLtIt.svg#f4b00ce1-c02b-4713-b21f-654e0016bd90") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-Bold";
+src:url("UniversNextforHSBCW04-Bold.eot?#iefix");
+src:url("UniversNextforHSBCW04-Bold.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-Bold.woff2") format("woff2"),url("UniversNextforHSBCW04-Bold.woff") format("woff"),url("UniversNextforHSBCW04-Bold.ttf") format("truetype"),url("UniversNextforHSBCW04-Bold.svg#ddd8a6f2-5894-4e0d-b004-30cba2380b9c") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01-ThCn";
+src:url("UniversNextforHSBCW01-ThCn.eot?#iefix");
+src:url("UniversNextforHSBCW01-ThCn.eot?#iefix") format("eot"),url("UniversNextforHSBCW01-ThCn.woff2") format("woff2"),url("UniversNextforHSBCW01-ThCn.woff") format("woff"),url("UniversNextforHSBCW01-ThCn.ttf") format("truetype"),url("UniversNextforHSBCW01-ThCn.svg#7994fe3c-2bb7-4582-817f-9e31ceab69f0") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW01SC-Bd";
+src:url("UniversNextforHSBCW01SC-Bd.eot?#iefix");
+src:url("UniversNextforHSBCW01SC-Bd.eot?#iefix") format("eot"),url("UniversNextforHSBCW01SC-Bd.woff2") format("woff2"),url("UniversNextforHSBCW01SC-Bd.woff") format("woff"),url("UniversNextforHSBCW01SC-Bd.ttf") format("truetype"),url("UniversNextforHSBCW01SC-Bd.svg#b4ee6c21-3cb8-46cb-9d44-29a377247a73") format("svg");
+}
+@font-face{
+font-family:"UniversNextforHSBCW04-UltLtIt";
+src:url("UniversNextforHSBCW04-UltLtIt.eot?#iefix");
+src:url("UniversNextforHSBCW04-UltLtIt.eot?#iefix") format("eot"),url("UniversNextforHSBCW04-UltLtIt.woff2") format("woff2"),url("UniversNextforHSBCW04-UltLtIt.woff") format("woff"),url("UniversNextforHSBCW04-UltLtIt.ttf") format("truetype"),url("UniversNextforHSBCW04-UltLtIt.svg#01185272-1165-4f2b-8c2d-0448825a4cfe") format("svg");
+}

@@ -1,0 +1,473 @@
+
+#tblLogin .login-title {
+    background: ;
+}
+
+h2.titleProgress, .titleNewForm, .page-header, #SearchUpdate > h2 {
+    background-color: ;
+    color: ;
+}
+
+A, A:link, A:visited {
+    color: ;
+}
+
+    a:focus, a:hover, a:active {
+        color: ;
+    }
+
+#listProgress thead tr th a, #listProgressForGroup thead tr th a, .datagrid-table thead tr th a {
+    color:  !important;
+}
+
+table.dataTable tbody > tr.odd.selected, table.dataTable tbody > tr.even.selected,
+table.dataTable.display tbody > tr.odd.selected, table.dataTable.stripe tbody > tr.odd.selected,
+table.dataTable.display tbody > tr.selected:hover, table.dataTable.stripe tbody > tr.selected:hover {
+    background-color: ;
+    color: ;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before, table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+    background-color: ;
+}
+
+
+#listProgress thead tr th a:focus, #listProgress thead tr th a:hover, #listProgress thead tr th a:active,
+#listProgressForGroup thead tr th a:focus, #listProgressForGroup thead tr th a:hover, #listProgressForGroup thead tr th a:active,
+.datagrid-table thead tr th a:focus, .datagrid-table thead tr th a:hover, .datagrid-table thead tr th a:active {
+    color:  !important;
+}
+
+header {
+    border-bottom: #FFFFFF !important;
+}
+
+    header.ix-nav {
+        background: #FFFFFF;
+    }
+
+.navbar, .navbar-inverse .navbar-collapse {
+    background: #FFFFFF;
+}
+
+    .navbar:hover, header.navbar:hover {
+        background: #FFFFFF;
+    }
+
+
+
+.navbar-inverse .navbar-nav > li > a, .navbar-text {
+    color: #252525 !important;
+}
+
+.navbar-text {
+    color:  !important;
+}
+
+    .navbar-text:before {
+        color:  !important;
+    }
+
+    .navbar-text.form-title {
+        background: #FFFFFF !important;
+    }
+
+.navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-nav > li > a:active, .navbar-inverse .navbar-nav > .active > a:active,
+.navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > .active > a:focus {
+    color:  !important;
+}
+
+.navbar-brand {
+     background-color: #FFFFFF;
+    background-size: ;
+    ;
+}
+
+    .navbar-brand:before {
+        border-right-color: #FFFFFF;
+    }
+
+    .navbar-brand:hover, .navbar-brand:focus {
+         background-color: #FFFFFF;
+        background-size: ;
+        ;
+    }
+
+.table th, .table .sub-head, #grdTemplates .sub-head{
+    background-color:  !important;
+    color: ;
+}
+
+    .table th > a, .table .sub-head > a, #grdTemplates .sub-head > a {
+        color: ;
+    }
+
+.pagination > .active > a, .pagination > .active > span {
+    color:  !important;
+    background-color: ;
+    border-color: ;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: ;
+}
+
+    .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span:focus, .pagination > .active > span:hover,
+    .pagination > li:first-child > a:hover, .pagination > li > a:hover {
+        color:  !important;
+        background-color: ;
+        border-color: ;
+    }
+
+
+#RecentProjects TH, #listProgress TH, #listProgressForGroup TH, .datagrid-table TH {
+    background-color:  !important;
+    color:  !important;
+}
+
+.form-control:hover {
+    border-color:  !important;
+}
+.form-control:disabled {
+    background-color:  !important;
+}
+
+.form-control:required, .form-control:required:focus, input:required, input:required:focus,
+.multiDataListBoxRequired, .multiDataListBoxRequired:focus, .required {
+    border-color: ;
+    background-color: ;
+}
+
+#SearchWideScreen #SearchTerm {
+    color: #252525;
+    border-color: #252525;
+}
+
+#SearchTerm::-webkit-input-placeholder { /* Chrome */
+    color: #252525 !important;
+}
+
+#SearchTerm:-ms-input-placeholder { /* IE 10+ */
+    color: #252525 !important;
+}
+
+#SearchTerm::-moz-placeholder { /* Firefox 19+ */
+    color: #252525 !important;
+    opacity: 1;
+}
+
+#SearchTerm:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #252525 !important;
+    opacity: 1;
+}
+
+#SearchWideScreen:hover #SearchTerm:hover {
+    color: ;
+    border-color: ;
+}
+
+#SearchTerm:hover::-webkit-input-placeholder { /* Chrome */
+    color:  !important;
+}
+
+#SearchTerm:hover:-ms-input-placeholder { /* IE 10+ */
+    color:  !important;
+}
+
+#SearchTerm:hover::-moz-placeholder { /* Firefox 19+ */
+    color:  !important;
+    opacity: 1;
+}
+
+#SearchTerm:hover:-moz-placeholder { /* Firefox 4 - 18 */
+    color:  !important;
+    opacity: 1;
+}
+
+#SearchWideScreen:hover #SearchTerm:hover {
+    border-color: ;
+}
+
+
+
+/*  WIZARD INTERFACE  */
+
+.wizardContent {
+    border-bottom-color: #252525;
+}
+
+h2.page-title, h4 {
+    color: ;
+}
+
+.question-text, .question-text-inline {
+    color: ;
+}
+
+
+.cell-title {
+    background-color: ;
+    color: ;
+}
+
+.inkWrapper CANVAS:hover {
+    border-color: ;
+}
+
+#ProjectAnswerFiles .indent > a, #NativeButtons .indent > a {
+    color:  !important;
+    text-decoration: none;
+}
+
+#ProjectAnswerFiles .indent:hover > a, #NativeButtons .indent:hover > a {
+    color:  !important;
+    text-decoration: underline;
+}
+
+#pagesList li {
+    background-color: ;
+}
+    #pagesList li > a:hover {
+        background-color: ;
+        color: ;
+    }
+    #pagesList li > a {
+        color: ;
+    }
+
+#pagesList .g-complete {
+    background-color: ;
+}
+   
+    #pagesList .g-complete > a, #pagesList .g-complete > a:visited {
+        color: ;
+    }
+
+#pagesList .active, #pagesList .active, #pagesList .active.g-complete {
+    background: ;
+    color: ;
+}
+#pagesList .active > a {
+    color: ;
+    border-left-color: ;
+}
+
+#pagesList .active:hover > a, #pagesList .active:focus > a {
+    color: ;
+    border-left-color: ;
+}
+
+#pagesList .active.g-complete > a:hover {
+    background: ;
+}
+
+#pagesList .active.g-complete > a {
+    color: ;
+}
+
+#pagesList LI:hover, #pagesList LI:focus, #pagesList .ui-sortable LI:hover {
+    background-color: ;
+}
+
+#pagesList .g-complete:hover, #pagesList .g-complete:hover, .ui-sortable .g-complete:hover {
+    background-color: ;
+}
+
+#pagesList .g-error:hover {
+    background-color: ;
+}
+
+.sidebarTop {
+    background-color: ;
+    color: ;
+}
+
+.sidebarItem {
+    color: ;
+}
+
+.lsh {
+    color: ;
+    background-color: ;
+    border-bottom-color: ;
+}
+
+.accordion {
+    background: ;
+    border-bottom-color: ;
+}
+
+    .accordion A, .accordion A:link, .accordion A:visited {
+        color:  !important;
+    }
+
+.lsrepeat {
+    border-color: ;
+}
+
+.lccell .lch {
+    color: ;
+}
+
+.lscommand {
+    background-color: ;
+}
+
+#divTemplateFinish .cell-title {
+    background-color: ;
+}
+
+
+
+.nav-tabs > li.active > a {
+    color: ;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background-color: ;
+}
+
+.ui-datepicker td span:hover, .ui-datepicker td a:hover {
+    background-color:  !important;
+    color: ;
+}
+
+.ui-datepicker td a.ui-state-active {
+    background-color:  !important;
+    color: ;
+}
+
+.ui-datepicker th {
+    background-color:  !important;
+    color: ;
+}
+
+.ui-datepicker tbody td.ui-datepicker-today a {
+    background: ;
+    color:  !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    color: ;
+    background-color: ;
+}
+
+.ui-datepicker td span:hover, .ui-datepicker td a:hover {
+    background:  none;
+    color:  !important;
+}
+
+.ui-datepicker tbody td.ui-datepicker-today a:hover {
+    background:  none;
+    color:  !important;
+}
+
+.ExpandButton {
+    background: ;
+}
+
+    .ExpandButton:hover {
+        background: ;
+    }
+
+.ContractButton {
+    background: ;
+}
+
+    .ContractButton:hover {
+        background: ;
+    }
+
+.btn-primary, .btn-primary2 {
+    color: ;
+    background-color: ;
+    background-image: -webkit-linear-gradient(top, 0%,  100%);
+    background-image: -o-linear-gradient(top,  0%,  100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(), to());
+    background-image: linear-gradient(to bottom,  0%,  100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='', endColorstr='', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: ;
+}
+
+    .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary2:active, .btn-primary2:focus, .btn-primary2:hover {
+        color: ;
+        background: ;
+        border-color: ;
+    }
+
+.btn-group .btn-primary.active, .btn-group .btn-primary:hover, .btn-group .btn-primary2.active, .btn-group .btn-primary2:hover {
+    color: ;
+    background: ;
+    border-color: ;
+}
+
+.btn-group .btn-primary.disabled:hover, .btn-group .btn-primary2.disabled:hover {
+    background: ;
+    background: ;
+    border-color: ;
+}
+
+.toggle-group .btn-primary, .toggle-group .btn-primary2 {
+    color: ;
+}
+
+.toggle-group .btn-primary.active, .toggle-group .btn-primary:hover, .toggle-group .btn-primary2.active, .toggle-group .btn-primary2:hover {
+    color: ;
+    background: ;
+    border-color: ;
+}
+@media (min-width: 768px) {
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: ;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-toggle {
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+         background-color: #FFFFFF;
+        background-size: ;
+        ;
+    }
+
+        .navbar-brand:before {
+            border-right-color: #FFFFFF;
+        }
+
+        .navbar-brand:hover, .navbar-brand:focus {
+             background-color: #FFFFFF;
+            background-size: ;
+            ;
+        }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: transparent;
+    }
+
+    .navbar-inverse:hover, .navbar-toggle:hover, .navbar-inverse:focus, .navbar-toggle:focus {
+        border-color: #000000;
+    }
+
+    .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+        background-color: transparent;
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #000000;
+    }
+
+    .navbar-inverse .navbar-toggle:hover .icon-bar {
+        background-color: #000000;
+    }
+
+
+}

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HSBC Insurance Singapore | Distributor Portal</title>
+<link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+<link href="/static/css/cdnbundle.css" rel="stylesheet" type="text/css">
+<link href="/static/css/hsbc.css" type="text/css" rel="stylesheet">
+<link href="/static/css/skin.css" rel="stylesheet" id="siteSkin">
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery-ui-1.12.1.custom.min.js"></script>
+<script src="/static/js/location.js"></script>
+<script src="/static/js/jquery.history.js"></script>
+<script src="/static/js/wizard.js"></script>
+<script src="/static/js/toastr.js"></script>
+<script src="/static/js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="projectType-form" style="">
+	<a id="top"></a>
+	<span id="wizHeader"></span>
+	<header class="navbar navbar-inverse navbar-fixed-top ix-nav">
+		<div class="container-fluid">
+			<div id="navbar-header">
+				<button class="navbar-toggle collapsed" type="button"
+					data-toggle="collapse" data-target=".ix-pagenav" id="ix-pagenavbtn"
+					style="display: none;">
+					<span class="sr-only">Toggle form navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand analyticslog" id="lnkHomeHead"
+					data-analyticsid="goToHome">
+					<div id="ixInfinitiLogo">
+						<img src="/static/img/produce.svg" alt="Infiniti Logo" height="56"
+							width="165"><span class="sr-only">Infiniti</span>
+					</div>
+				</a>
+			</div>
+			<nav>
+				<ul class="nav navbar-nav navbar-home">
+					<li><a id="lnkHome" title="Home" class="analyticslog"
+						data-analyticsid="goToHome">Home</a></li>
+				</ul>
+				<p class="navbar-text form-title hidden-xs">New Quotation MVP 2
+					Prod - SP</p>
+				<ul class="nav navbar-nav navbar-right">
+					<li id="loggedInUser">Welcome Marcus H HU</li>
+					<li id="LogoutMenu"><a id="lnkSignOut"
+						class="signout-link analyticslog" data-analyticsid="logoff">Log
+							Out</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<form id="aspnetForm" method="post" novalidate="novalidate">
+
+		<input type="hidden" th:name="${_csrf.parameterName}" id="_csrf"
+			th:value="${_csrf.token}" />
+		<div class="container-fluid ix-header-body wizardContent">
+			<table width="100%" class="NoPadding NoSpacing" role="presentation">
+				<tbody>
+					<tr>
+						<td id="Sections" style="display: none;">
+							<div class="collapse navbar-collapse ix-pagenav"
+								role="navigation">
+								<div id="topBar"></div>
+								<div id="OptionPanel">
+									<div id="plhCustomUI"></div>
+									<div id="pagesList"></div>
+								</div>
+								<div id="ProjectAnswerFiles"></div>
+							</div>
+						</td>
+						<td id="Questions" style="vertical-align: top" class="noNavPane">
+							<div id="up" aria-hidden="false">
+								<table width="100%" class="NoPadding NoSpacing"
+									role="presentation">
+									<tbody>
+										<tr>
+											<td id="QuestionsInner" style="vertical-align: top">
+												<div
+													style="z-index: 1000; position: absolute; display: none; overflow: hidden; width: 315px"
+													class="HelpText" id="HelpText" tabindex="-1">
+													<span></span>
+													<table align="right" role="presentation">
+														<tbody>
+															<tr>
+																<td></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="Group "
+													id="Paa085ac9-66a4-475c-a6dd-9daf8b405b75">
+													<div>
+														<table class="NoPadding NoSpacing" width="100%"
+															role="presentation">
+															<tbody>
+																<tr>
+																	<td>
+																		<h2 class="page-title" id="page-title" tabindex="0">Quote
+																			Preview - Jade</h2>
+																	</td>
+																	<td class="pageNav"></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div id="PageBody">
+
+														<div class="ls ">
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="ls ">
+																				<div class="l-table">
+																					<div class="l-row">
+
+																						<div class="l-cell l-cell-header lccell"
+																							style="display: table-cell"></div>
+																					</div>
+																					<div class="l-row">
+
+																						<div class="l-cell lccell lccellfirst ">
+																							<div class="lc">
+
+																								<div class="question-group ">
+																									<div class="question-body ">
+																										<div
+																											id="F74011cc2_9d54_4b9f_af00_2f6809d1ca9e_Q9"
+																											class="question-label">
+																											<h2>New Quotation</h2>
+																										</div>
+																									</div>
+
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+																			<div class="ls progressSmall">
+																				<div class="l-table">
+																					<div class="l-row">
+
+																						<div class="l-cell l-cell-header lccell"
+																							style="display: table-cell"></div>
+																					</div>
+																					<div class="l-row">
+
+																						<div class="l-cell lccell lccellfirst ">
+																							<div class="lc">
+
+																								<div class="question-group ">
+																									<div class="question-body ">
+																										<div
+																											id="F74011cc2_9d54_4b9f_af00_2f6809d1ca9e_Q1"
+																											class="question-label">
+																											<div>Quote Preview | Step 4 of 4</div>
+																											<div class="progress"
+																												style="height: 5px; margin: 5px 0px;">
+																												<div
+																													class="progress-bar progress-bar-danger"
+																													role="progressbar" style="width: 100%;"
+																													aria-valuenow="100" aria-valuemin="0"
+																													aria-valuemax="100"></div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+																					<div id="F74011cc2_9d54_4b9f_af00_2f6809d1ca9e_Q8"
+																						class="question-label"></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="ls ">
+															<h3 class="lsh">Summary</h3>
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Insured
+																									Name</div>
+
+																							</td>
+																							<td><div class="question-body ">
+																									<div id="Q869" class="question-label">AA</div>
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+																								<div class="qtdiv" role="heading">Gender</div>
+																							</td>
+																							<td><div class="question-body ">
+																									<div id="Q945" class="question-label">Female</div>
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Date of
+																									Birth</div>
+																							</td>
+																							<td><div class="question-body ">
+																									<div id="Q870" class="question-label">11/11/1990</div>
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Country
+																									Rating, Country Name</div>
+
+																							</td>
+																							<td><div class="question-body ">
+																									<div id="Q946" class="question-label">A+,&nbsp;gggg</div>
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Underwriting
+																									Class</div>
+																							</td>
+																							<td><div class="question-body ">
+																									<div id="Q947" class="question-label">Standard
+																										Non-Smoker</div>
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+																								<div class="qtdiv" role="heading">Sum
+																									Insured</div>
+
+																							</td>
+																							<td><div class="question-body ">
+																									<div id="Q872" class="question-label">USD&nbsp;1,000,000</div>
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="ls ">
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body floatRight">
+																					<div class="btn-group">
+																						<button id="Q748" name="Q748" type="button"
+																							class="btn btn-secondary"
+																							onclick="previewQuote()">Preview Quote</button>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="ls ">
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+																					<div id="Q965" class="question-label"></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="ls " id="quotePreView" style="display: none;">
+															<h3 class="lsh">Quote Preview</h3>
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Application
+																									Reference Number</div>
+
+																							</td>
+																							<td><div class="question-body ">
+
+
+																									<div id="Q683" class="question-label"></div>
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<!-- 
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Premium</div>
+
+																							</td>
+																							<td><div class="question-body ">
+
+
+																									<div id="Q683" class="question-label">USD
+																										150,864</div>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Day 1
+																									Cash Value</div>
+
+																							</td>
+																							<td><div class="question-body ">
+
+
+																									<div id="Q687" class="question-label">USD
+																										120,432</div>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Breakeven
+																									Year</div>
+
+																							</td>
+																							<td><div class="question-body ">
+
+
+																									<div id="Q684" class="question-label">8</div>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div> 
+
+																			<div class="question-group ">
+																				<table width="100%" role="presentation">
+																					<tbody>
+																						<tr>
+																							<td class="question-text-inline ">
+
+																								<div class="qtdiv" role="heading">Guarantee
+																									Age</div>
+
+																							</td>
+																							<td><div class="question-body ">
+
+
+																									<div id="Q686" class="question-label">81</div>
+
+
+
+																								</div></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>-->
+
+
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="ls ">
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="Q907" class="question-label">
+																						<span style="color: #ff0000;"></span>
+																					</div>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="cell-footer" style="text-align: center">
+														<div class="frLeft">
+															<div>
+																<input type="button" class="nav previousPage"
+																	onclick="formSubmit(3);" accesskey="B"
+																	title="Previous Page" aria-label="Previous Page"
+																	data-pushstate="true" value="">
+															</div>
+														</div>
+														<input type="button" id="btnGenerateDoc"
+															style="display: none;" name="generateAction"
+															class="btn btn-primary genbutton"
+															onclick="formSubmit(5);" accesskey="G"
+															value="Generate Policy Illustration">
+														<div class="fr"></div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div id="popupModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" style="text-align: center">
+									<div class="modal-content modal-insert"></div>
+								</div>
+							</div>
+							<div id="popupLargeModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog modal-lg" style="text-align: center">
+									<div class="modal-content modal-lg-insert"></div>
+								</div>
+							</div>
+
+							<div id="popupLargeDraggableModal" class="modal fade"
+								role="dialog" aria-hidden="true">
+								<div id="draggableDialog" class="modal-dialog modal-lg"
+									style="text-align: center">
+									<div class="modal-content modal-lgd-insert"></div>
+								</div>
+							</div>
+							<div id="popupFullscreenModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog modal-fullscreen"
+									style="text-align: center">
+									<div class="modal-content modal-lgf-insert"></div>
+								</div>
+							</div> <script type="text/javascript">
+								$(".modal-fullscreen")
+										.on(
+												'show.bs.modal',
+												function() {
+													setTimeout(
+															function() {
+																$(
+																		".modal-backdrop")
+																		.addClass(
+																				"modal-backdrop-fullscreen");
+															}, 0);
+												});
+								$(".modal-fullscreen")
+										.on(
+												'hidden.bs.modal',
+												function() {
+													$(".modal-backdrop")
+															.addClass(
+																	"modal-backdrop-fullscreen");
+												});
+							</script>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="modal" id="waitShort-modal" style="display: none;"></div>
+			<div class="modal" id="wait-modal" title="Loading..."
+				style="display: none;">
+				<div class="modal-dialog wait-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div style="text-align: center" aria-live="assertive">
+								<div id="wait-spinner" title="Loading..."
+									aria-label="Loading...">
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="previewWin"
+				style="display: none; position: absolute; z-index: 1000"></div>
+			<span id="wizFooter"> <script>
+				$('#wait-spinner').append('<div></div><div></div><div></div>');
+			</script>
+			</span>
+		</div>
+	</form>
+
+	<script src="/static/js/general_helper.js"></script>
+	<!-- <script src="static/js/validate.js"></script> -->
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/iip.js"></script>
+
+
+	<script type="text/javascript">
+		function formSubmit(e) {
+			var newUrl = "/quotation/step/" + e;
+			$("#aspnetForm").attr('action', newUrl);
+			$("#aspnetForm").submit();
+		}
+
+		function previewQuote() {
+
+			var csrf = $('#_csrf').val();
+			console.log(csrf);
+			var data = {
+				"policyDetails" : {
+					"productCode" : "JG3"
+				},
+				"_csrf" : csrf
+			};
+			//call IIP
+			$.ajax({
+				type : 'POST',
+				url : API_URL.ARN,
+				data : data,
+				success : data,
+				dataType : "json",
+				success : function(res) {
+					console.log("successful-->" + res);
+					$('#quotePreView').show();
+					$('#btnGenerateDoc').show();
+					if (res.rtnCode == 1) {
+						$("#Q683").text(res.arn);
+					}
+
+				},
+				error : function(err) {
+					console.log("error--->" + err);
+				}
+			});
+
+		}
+	</script>
+
+
+</body>
+</html>

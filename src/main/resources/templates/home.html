@@ -1,0 +1,27 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>SSO Demo</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				Authenticated successfully as [[${profile}]]<br /> Group:
+				[[${group}]]
+				<div>
+					<a th:href="@{/logout}" class="btn btn-primary">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--<h2>This Facebook feed belongs to <span th:text="${profile}">NAME</span></h2>-->
+
+	<!--<h2>He belongs to <span th:text="${group}">GROUP</span></h2>-->
+
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>New Quotation MVP 2 Prod - SP - Applicant Basic
+	Information</title>
+<link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+<link href="/static/css/cdnbundle.css" rel="stylesheet" type="text/css">
+<link href="/static/css/hsbc.css" type="text/css" rel="stylesheet">
+<link href="/static/css/skin.css" rel="stylesheet" id="siteSkin">
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery-ui-1.12.1.custom.min.js"></script>
+<script src="/static/js/location.js"></script>
+<script src="/static/js/jquery.history.js"></script>
+<script src="/static/js/wizard.js"></script>
+<script src="/static/js/iip.js"></script>
+
+<script type="text/javascript">
+	var dob = "";
+
+	function calcAge() {
+		var dobCurrent = "";
+		var dd = $('#Q1191_dd').val();
+		var mm = $('#Q1191_MM').val();
+		var yyyy = $('#Q1191_yyyy').val();
+
+		if (dd !== null && dd !== undefined && dd !== '') {
+			if (mm !== null && mm !== undefined && mm !== '') {
+				if (yyyy !== null && yyyy !== undefined && yyyy !== '') {
+					dobCurrent = yyyy + "-" + mm + "-" + dd;
+				}
+			}
+		}
+
+		var flag = false;
+
+		if (dob == "") {
+			dob = dobCurrent;
+			flag = true;
+		} else {
+			if (dobCurrent != dob) {
+				dob = dobCurrent;
+				flag = true;
+			}
+		}
+
+		var csrf = $('#_csrf').val();
+		console.log(csrf);
+		if (flag) {
+			var data = {
+				"dob" : dob,
+				"_csrf" : csrf
+			};
+			//call IIP
+			$.ajax({
+				type : 'POST',
+				url : API_URL.CalcAge,
+				data : data,
+				success : data,
+				dataType : "json",
+				success : function(res) {
+					console.log("successful-->%", res);
+
+					if (res.rtnCode == 1) {
+						console.log(res.anb);
+						if (res.anb > 0) {
+							$('#anb').text(res.anb);
+							$('#anb_div').show();
+						}
+					}
+
+				},
+				error : function(err) {
+					console.log("error--->" + err);
+				}
+			});
+
+		}
+
+	}
+</script>
+
+
+</head>
+<body>
+
+	<header class="navbar navbar-inverse navbar-fixed-top ix-nav">
+		<div class="container-fluid">
+			<div id="navbar-header">
+				<button class="navbar-toggle collapsed" type="button"
+					data-toggle="collapse" data-target=".ix-pagenav" id="ix-pagenavbtn"
+					style="display: none;">
+					<span class="sr-only">Toggle form navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand analyticslog" id="lnkHomeHead"
+					data-analyticsid="goToHome">
+					<div id="ixInfinitiLogo">
+						<img src="/static/img/produce.svg" alt="Infiniti Logo" height="56"
+							width="165"><span class="sr-only">Infiniti</span>
+					</div>
+				</a>
+			</div>
+			<nav>
+				<ul class="nav navbar-nav navbar-home">
+					<li><a id="lnkHome" title="Home" class="analyticslog"
+						data-analyticsid="goToHome">Home</a></li>
+				</ul>
+				<p class="navbar-text form-title hidden-xs">New Quotation MVP 2
+					Prod - SP</p>
+				<ul class="nav navbar-nav navbar-right">
+					<li id="loggedInUser">Welcome [[${profile}]]</li>
+					<li id="LogoutMenu"><a id="lnkSignOut"
+						class="signout-link analyticslog" data-analyticsid="logoff">Log
+							Out</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<form th:action="@{/quotation/step/2}" id="aspnetForm" method="post"
+		novalidate="novalidate">
+		<input type="hidden" th:name="${_csrf.parameterName}" id="_csrf"
+			th:value="${_csrf.token}" /> <input type="hidden"
+			id="validateMonths"
+			value='["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec","january","february","march","april","june","july","august","september","october","november","december"]'>
+		<div class="container-fluid ix-header-body wizardContent">
+			<table width="100%" class="NoPadding NoSpacing" role="presentation">
+				<tbody>
+					<tr>
+						<td id="Sections" style="display: none;">
+							<div class="collapse navbar-collapse ix-pagenav"
+								role="navigation">
+
+								<div id="topBar"></div>
+
+								<div id="OptionPanel">
+									<div id="plhCustomUI"></div>
+									<div id="pagesList"></div>
+								</div>
+								<div id="ProjectAnswerFiles"></div>
+							</div>
+						</td>
+						<td id="Questions" style="vertical-align: top" class="noNavPane">
+
+							<div id="up">
+
+								<table width="100%" class="NoPadding NoSpacing"
+									role="presentation">
+									<tbody>
+										<tr>
+											<td id="QuestionsInner" style="vertical-align: top">
+												<div class="Group "
+													id="Pc121bcca-9d0a-455c-a337-744cf93898bc">
+													<div>
+														<table class="NoPadding NoSpacing" width="100%"
+															role="presentation">
+															<tbody>
+																<tr>
+																	<td>
+																		<h2 class="page-title" id="page-title" tabindex="0">Applicant
+																			Basic Information</h2>
+																	</td>
+																	<td class="pageNav"></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div id="PageBody">
+
+														<div class="ls ">
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="ls ">
+																				<div class="l-table">
+																					<div class="l-row">
+
+																						<div class="l-cell l-cell-header lccell"
+																							style="display: table-cell"></div>
+																					</div>
+																					<div class="l-row">
+
+																						<div class="l-cell lccell lccellfirst ">
+																							<div class="lc">
+
+																								<div class="question-group ">
+																									<div class="question-body ">
+
+
+
+
+																										<div
+																											id="F560fa0ba_a13c_4a71_979b_35a81a502eb0_Q9"
+																											class="question-label">
+																											<h2>New Quotation</h2>
+																										</div>
+
+
+
+																									</div>
+
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+																			<div class="ls progressSmall">
+																				<div class="l-table">
+																					<div class="l-row">
+
+																						<div class="l-cell l-cell-header lccell"
+																							style="display: table-cell"></div>
+																					</div>
+																					<div class="l-row">
+
+																						<div class="l-cell lccell lccellfirst ">
+																							<div class="lc">
+
+																								<div class="question-group ">
+																									<div class="question-body ">
+
+
+
+
+																										<div
+																											id="F560fa0ba_a13c_4a71_979b_35a81a502eb0_Q1"
+																											class="question-label">
+																											<div>Basic Information | Step 1 of 4</div>
+																											<div class="progress"
+																												style="height: 5px; margin: 5px 0px;">
+																												<div
+																													class="progress-bar progress-bar-danger"
+																													role="progressbar" style="width: 25%;"
+																													aria-valuenow="25" aria-valuemin="0"
+																													aria-valuemax="100"></div>
+																											</div>
+																										</div>
+
+
+
+																									</div>
+
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+																			<div class="question-group ">
+																				<div class="question-body ">
+
+
+
+
+																					<div id="F560fa0ba_a13c_4a71_979b_35a81a502eb0_Q8"
+																						class="question-label"></div>
+
+
+
+																				</div>
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="ls ">
+															<div class="l-table">
+																<div class="l-row">
+
+																	<div class="l-cell l-cell-header lccell"
+																		style="display: table-cell"></div>
+																</div>
+																<div class="l-row">
+
+																	<div class="l-cell lccell lccellfirst ">
+																		<div class="lc">
+
+																			<div class="ls ">
+																				<div class="l-table">
+																					<div class="l-row">
+
+																						<div class="l-cell l-cell-header lccell"
+																							style="display: table-cell"></div>
+																					</div>
+																					<div class="l-row">
+																						<div class="l-cell lccell lccellfirst ">
+																							<div class="lc">
+																								<div class="question-group ">
+																									<table width="100%" role="presentation">
+																										<tbody>
+																											<tr>
+																												<td class="question-text-inline "><label
+																													for="Q1">Prepared by</label></td>
+																												<td><div class="question-body ">
+																														<input type="text" id="Q1" name="Q1"
+																															value="" placeholder=""
+																															class="form-control" autocomplete="off"
+																															spellcheck="true" maxlength="70"
+																															required=""> <input type="hidden"
+																															id="Q1_change" name="Q1_change" value="0">
+																													</div></td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</div>
+
+																								<div class="question-group " role="radiogroup"
+																									aria-labelledby="Q1189Text">
+																									<table width="100%" role="presentation">
+																										<tbody>
+																											<tr>
+																												<td class="question-text-inline ">
+
+																													<div id="Q1189Text" class="qtdiv"
+																														role="heading">Type of Application</div>
+																												</td>
+																												<td><div class="question-body ">
+																														<input type="hidden" id="Q1189_change"
+																															name="Q1189_change" value="0">
+																														<div class="radiogroup">
+																															<div class="radio-inline">
+																																<input type="radio" id="Q1189-A5394"
+																																	name="Q1189" value="5394"
+																																	checked="checked" required="">
+																																<label for="Q1189-A5394"><span><span></span></span>
+																																	Self-Owned </label>
+																															</div>
+																															<div class="radio-inline">
+																																<input type="radio" id="Q1189-A5395"
+																																	name="Q1189" value="5395" required="">
+																																<label for="Q1189-A5395"><span><span></span></span>
+																																	Trust/Keyman </label>
+																															</div>
+																															<div class="radio-inline">
+																																<input type="radio" id="Q1189-A5396"
+																																	name="Q1189" value="5396" required="">
+																																<label for="Q1189-A5396"><span><span></span></span>
+																																	Third Party </label>
+																															</div>
+																														</div>
+																													</div></td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+																			<div class="ls ">
+																				<h3 class="lsh">Applicant/Policyowner</h3>
+																				<div class="l-table">
+																					<div class="l-row">
+
+																						<div class="l-cell l-cell-header lccell"
+																							style="display: table-cell"></div>
+																					</div>
+																					<div class="l-row">
+
+																						<div class="l-cell lccell lccellfirst ">
+																							<div class="lc">
+
+																								<div class="question-group ">
+																									<table width="100%" role="presentation">
+																										<tbody>
+																											<tr>
+																												<td class="question-text-inline "><label
+																													for="Q2">Name</label></td>
+																												<td><div class="question-body ">
+																														<input type="text" id="Q2" name="Q2"
+																															value="" placeholder=""
+																															class="form-control" autocomplete="off"
+																															spellcheck="true" maxlength="70"
+																															required=""> <input type="hidden"
+																															id="Q2_change" name="Q2_change" value="0">
+																													</div></td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</div>
+
+																								<div class="question-group " role="radiogroup"
+																									aria-labelledby="Q1190Text">
+																									<table width="100%" role="presentation">
+																										<tbody>
+																											<tr>
+																												<td class="question-text-inline ">
+
+																													<div id="Q1190Text" class="qtdiv"
+																														role="heading">Gender</div>
+																												</td>
+																												<td><div class="question-body ">
+																														<input type="hidden" id="Q1190_change"
+																															name="Q1190_change" value="0">
+																														<div class="radiogroup">
+																															<div class="radio-inline">
+																																<input type="radio" id="Q1190-A5397"
+																																	name="Q1190" value="5397" required="">
+																																<label for="Q1190-A5397"><span><span></span></span>
+																																	Male </label>
+																															</div>
+																															<div class="radio-inline">
+																																<input type="radio" id="Q1190-A5398"
+																																	name="Q1190" value="5398" required="">
+																																<label for="Q1190-A5398"><span><span></span></span>
+																																	Female </label>
+																															</div>
+																														</div>
+																													</div></td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</div>
+
+																								<div class="question-group ">
+																									<table width="100%" role="presentation">
+																										<tbody>
+																											<tr>
+																												<td class="question-text-inline "><label
+																													for="Q1191_dd">Date of Birth</label></td>
+																												<td><div class="question-body ">
+
+																														<div id="Q1191_grp">
+																															<input type="number" placeholder="dd"
+																																value="" min="1" max="31"
+																																class="form-control dd" id="Q1191_dd"
+																																required=""
+																																onkeyup="validate.intervalKeyUp(event, 'Q1191', ['dd','MM','yyyy'], 'dd')"
+																																onblur="wiz.dateIntervalBlur('Q1191', ['dd','MM','yyyy'], true, true, 'dd')"
+																																autocomplete="off"> <input
+																																type="number" placeholder="mm" value=""
+																																max="12" min="1" class="form-control mm"
+																																id="Q1191_MM" required=""
+																																onkeyup="validate.intervalKeyUp(event, 'Q1191', ['dd','MM','yyyy'], 'MM')"
+																																onblur="wiz.dateIntervalBlur('Q1191', ['dd','MM','yyyy'], true, true, 'MM')"
+																																autocomplete="off"> <input
+																																type="number" max="9999" min="0"
+																																value="" placeholder="yyyy"
+																																class="form-control yyyy"
+																																id="Q1191_yyyy" required=""
+																																onkeyup="validate.intervalKeyUp(event, 'Q1191', ['dd','MM','yyyy'], 'yyyy')"
+																																onblur="wiz.dateIntervalBlur('Q1191', ['dd','MM','yyyy'], true, true, 'yyyy');calcAge();"
+																																autocomplete="off">
+
+																														</div>
+																														<input type="hidden" id="Q1191"
+																															name="Q1191" value=""> <input
+																															type="hidden" id="Q1191_change"
+																															name="Q1191_change" value="0">
+																													</div></td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</div>
+
+
+																								<div class="question-group " id="anb_div"
+																									style="display: none">
+																									<table width="100%" role="presentation">
+																										<tbody>
+																											<tr>
+																												<td class="question-text-inline "><label
+																													for="Q1191_dd">Age Next Birthday</label></td>
+																												<td><div class="question-body ">
+
+																														<div id="anb"></div>
+
+																													</div></td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</div>
+
+																								<div class="question-group " role="radiogroup"
+																									aria-labelledby="Q1192Text">
+																									<table width="100%" role="presentation">
+																										<tbody>
+																											<tr>
+																												<td class="question-text-inline ">
+
+																													<div id="Q1192Text" class="qtdiv"
+																														role="heading">Smoker</div>
+																												</td>
+																												<td><div class="question-body ">
+																														<input type="hidden" id="Q1192_change"
+																															name="Q1192_change" value="0">
+																														<div class="radiogroup">
+																															<div class="radio-inline">
+																																<input type="radio" id="Q1192-A5400"
+																																	name="Q1192" value="5400" required="">
+																																<label for="Q1192-A5400"><span><span></span></span>
+																																	Yes </label>
+																															</div>
+																															<div class="radio-inline">
+																																<input type="radio" id="Q1192-A5401"
+																																	name="Q1192" value="5401" required="">
+																																<label for="Q1192-A5401"><span><span></span></span>
+																																	No </label>
+																															</div>
+																														</div>
+																													</div></td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="cell-footer" style="text-align: center">
+														<div class="fr">
+															<div class="btnBottomWrapper" id="btnNextBottom">
+																<input type="submit" class="nav nextPage"
+																	id="btnNextBottom" title="Next Page"
+																	aria-label="Next Page" data-pushstate="true" value="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div id="popupModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" style="text-align: center">
+									<div class="modal-content modal-insert"></div>
+								</div>
+							</div>
+							<div id="popupLargeModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog modal-lg" style="text-align: center">
+									<div class="modal-content modal-lg-insert"></div>
+								</div>
+							</div>
+
+							<div id="popupLargeDraggableModal" class="modal fade"
+								role="dialog" aria-hidden="true">
+								<div id="draggableDialog" class="modal-dialog modal-lg"
+									style="text-align: center">
+									<div class="modal-content modal-lgd-insert"></div>
+								</div>
+							</div>
+							<div id="popupFullscreenModal" class="modal fade" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog modal-fullscreen"
+									style="text-align: center">
+									<div class="modal-content modal-lgf-insert"></div>
+								</div>
+							</div> <script type="text/javascript">
+								$(".modal-fullscreen")
+										.on(
+												'show.bs.modal',
+												function() {
+													setTimeout(
+															function() {
+																$(
+																		".modal-backdrop")
+																		.addClass(
+																				"modal-backdrop-fullscreen");
+															}, 0);
+												});
+								$(".modal-fullscreen")
+										.on(
+												'hidden.bs.modal',
+												function() {
+													$(".modal-backdrop")
+															.addClass(
+																	"modal-backdrop-fullscreen");
+												});
+							</script>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="modal" id="waitShort-modal"></div>
+			<div class="modal" id="wait-modal" title="Loading..."
+				style="display: none;">
+				<div class="modal-dialog wait-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div style="text-align: center" aria-live="assertive">
+								<div id="wait-spinner" title="Loading..."
+									aria-label="Loading...">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="previewWin"
+				style="display: none; position: absolute; z-index: 1000"></div>
+			<span id="wizFooter"> </span>
+		</div>
+	</form>
+	<script src="/static/js/validate.js" />
+	<script src="/static/js/toastr.js"></script>
+	<script src="/static/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="/static/js/general_helper.js" />
+	<script src="/static/js/bootstrap.min.js" />
+
+
+</body>
+</html>
+

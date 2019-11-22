@@ -1,0 +1,33 @@
+spring:
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
+    static-path-pattern: /static/**
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            client-id: 2crl15l3r1v4tksd65h8oagm5v
+            client-secret: evs85962q1uigtm3q70ikoovsc21n9tctut39que6rkjnahjgnv
+            client-name: mks-cgnito
+            provider: cognito
+            scope: openid
+            redirect-uri-template: http://localhost:8080/login/oauth2/code/cognito
+            authorization-grant-type: authorization_code
+        provider:
+          cognito:
+            authorization-uri: https://mks-cgnito.auth.ap-southeast-1.amazoncognito.com/oauth2/authorize
+            token-uri: https://mks-cgnito.auth.ap-southeast-1.amazoncognito.com/oauth2/token
+            user-info-uri: https://mks-cgnito.auth.ap-southeast-1.amazoncognito.com/oauth2/userInfo
+            jwk-set-uri: https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_r3FfzEg1D/.well-known/jwks.json
+            user-name-attribute: cognito:username
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: true

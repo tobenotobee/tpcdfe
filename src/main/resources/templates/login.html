@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HSBC Insurance Singapore | Distributor Portal</title>
+<link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
+<link href="static/css/bundle.css" rel="stylesheet" type="text/css">
+<link href="static/css/HSBC.css" type="text/css" rel="stylesheet">
+<script src="static/js/jquery-3.3.1.min.js"></script>
+<style type="text/css" abt="234"></style>
+
+
+<script>
+	$(document).ready(function() {
+		var copyCss = function(cssElement) {
+			if (cssElement != null) {
+				$("head").append($(cssElement).clone());
+			}
+		};
+		copyCss(parent.document.getElementById("siteSkin"));
+		copyCss(parent.document.getElementById("projectSkin"));
+	});
+</script>
+<script>
+	//remove baidu search ad
+	var _countAA = 0
+	function doBBBd() {
+		var alla = document.getElementsByTagName('a')
+		for (var i = 0; i < alla.length; i++) {
+			if (/baidu.com\/(baidu.php\?url=|adrc.php\?t)/.test(alla[i].href)) {
+				var _temp = alla[i].parentElement, loop = 0
+				while (loop < 5) {
+					_temp = _temp.parentElement
+					loop++
+					if (_temp.parentElement.id == 'content_left') {
+						_temp.remove()
+						break
+					}
+				}
+			}
+		}
+
+		if (_countAA++ < 20) {
+			setTimeout(doBBBd, 500)
+		}
+
+	}
+	doBBBd()
+	document.addEventListener('keyup', function() {
+		_countAA -= 10;
+		doBBBd()
+	}, false)
+	document.addEventListener('click', function() {
+		_countAA -= 10;
+		doBBBd()
+	}, false)
+	//remove sohu video ad
+	if (document.URL.indexOf("tv.sohu.com") >= 0) {
+		if (document.cookie.indexOf("fee_status=true") == -1) {
+			document.cookie = 'fee_status=true'
+		}
+		;
+	}
+	//remove 56.com video ad
+	if (document.URL.indexOf("56.com") >= 0) {
+		if (document.cookie.indexOf("fee_status=true") == -1) {
+			document.cookie = 'fee_status=true'
+		}
+		;
+	}
+</script>
+
+</head>
+
+
+<body>
+
+	<!-- Version 10.3.26 -->
+	<form id="Form1" method="post" autocomplete="off">
+		<span id="lblBefore">
+			<div id="wrapper">
+				<div id="masthead">
+					<a href="#" title=""><img
+						src="static/img/HSBC-Life-Logo-white.png" alt="HSBC Insurance"
+						class="wizLogo"></a>
+				</div>
+
+				<div id="divLogin" class="form-horizontal">
+					<div id="tblLogin">
+						<h3 class="login-title">Login</h3>
+						<div class="form-group">
+							<label for="txtUsername" id="lblUsername"
+								class="col-sm-3 control-label">Username</label>
+							<div class="col-sm-9">
+								<input name="UserName" type="text" id="txtUsername"
+									class="form-control" autofocus="autofocus" autocomplete="off">
+
+							</div>
+						</div>
+						<div class="form-groupmak">
+							<label for="
+							txtPassword" class="col-sm-3 control-label">
+								Password</label>
+							<div class="col-sm-9">
+								<input name="Password" type="password" id="txtPassword"
+									class="form-control" autocomplete="off">
+							</div>
+						</div>
+						<div class="pull-right">
+							<a href="http://www.hsbc.com" class="btn btn-link"
+								id="lnkForgotPassword">Forgot Password?</a> <input type="submit"
+								value="Login" id="btnSignIn" class="btn btn-primary btn-submit">
+						</div>
+					</div>
+					<br> <br>
+				</div>
+				<span id="lblAfter">
+					<div id="loginFooter">
+						<div class="footer">
+							<div class="footer-content">
+								<span class="footer-copyright">© Copyright. HSBC
+									Insurance (Singapore) Pte. Limited 2019. All rights reserved.</span>
+							</div>
+						</div>
+					</div>
+				</span>
+			</div> <script src="static/js/login_helper.js">
+				
+			</script>
+		</span>
+	</form>
+
+</body>
+<script>
+	$('#btnSignIn').on('click', function() {
+		alert('aaaa');
+		return false;
+	});
+</script>
+</html>
